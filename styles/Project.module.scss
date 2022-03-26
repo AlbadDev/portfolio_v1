@@ -1,0 +1,51 @@
+.myProject {
+    float: left;
+    width: 100%;
+    .myWork {
+        color: #14c7c7;
+        font-size: 26px;
+        display: flex;
+        float: left;
+        margin-top: -20px;
+    }
+    
+    .myWork::before {
+        content: "";
+        position: relative;
+        transform: rotate(90deg);
+        display: inline-block;
+        width: 1px;
+        height: 90px;
+        background-color: #14c7c7;
+        margin-top: -20px;
+        margin-right: 70px;
+        margin-left: 70px;
+    }
+}
+
+@media (max-width:410px) {
+    .about {
+       margin-left: -40px;
+    }
+ 
+    .social {
+        display: none;
+    }
+     
+ }
+ 
+ @media (max-width:410px) {
+     .about {
+        margin-left: -40px;
+     }
+  
+     .social {
+         display: none;
+     }
+      
+  }
+  @media (min-width: 320px) {
+    .myWork {
+       margin-left: -15px;
+    }
+}

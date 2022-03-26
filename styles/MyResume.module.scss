@@ -1,0 +1,338 @@
+.container {
+    float: left;
+    width: 100%;
+    .resume {
+        color: #14c7c7;
+        font-size: 26px;
+        display: flex;
+        float: left;
+        margin-top: -20px;
+    }
+
+    .resume::before {
+        content: "";
+        position: relative;
+        transform: rotate(90deg);
+        display: inline-block;
+        width: 1px;
+        height: 90px;
+        background-color: #14c7c7;
+        margin-top: -20px;
+        margin-right: 70px;
+        margin-left: 70px;
+    }
+
+}
+
+.resumeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(127, 255, 212, 0.123);
+
+    .resumeHead {
+        display: flex;
+        flex-direction: column;
+        background-color: #11acacb6;
+        //background-color: #4190b7;
+        border: 3px solid  rgba(255, 255, 0, 0.568);
+        border-bottom: none ;
+        width: 100%;
+        height: 120px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        h1 {
+            color: aliceblue;
+        }
+        .firstName {
+            color: tomato;
+        }
+        .title {
+            display: flex;
+            color: #ccd6f6;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 2px;
+            margin: 2px;
+        }
+        .title::before {
+            content: "";
+            display: flex;
+            width: 100px;
+            height: 2px;
+            margin: auto 10px;
+            background-color: #14c7c7;
+
+        }
+        .title::after {
+            content: "";
+            display: flex;
+            width: 100px;
+            height: 2px;
+            margin:  auto 10px;
+            background-color: #14c7c7;
+
+        }
+    }
+
+    .myResume {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        .resumeProfilContainer {
+            float: left;
+            align-items: center;
+            color: aquamarine;
+            background-color: rgb(59, 63, 68);
+            border: 3px solid  rgba(255, 255, 0, 0.568);
+            margin-top: -60px;
+            margin-left: 40px;
+            width: 20%;
+            height: 150px;
+            z-index: 1;
+            .profilPic {
+                // border-radius: 50%;
+                margin: 10px;
+            }
+          
+        }
+        .resumesocialLink {
+            display: flex;
+            justify-content: space-between;
+            float: right;
+            padding: 20px;
+            align-items: center;
+            width: 100%;
+            height: 150px;
+            //background-color: aliceblue;
+
+            ol {
+                display: flex;
+                justify-content: space-between;
+                li {
+                    color: #ccd6f6;
+                    display: flex;
+                    justify-content: space-between;
+                    
+                    margin-left: 50px;
+                    margin-top: -20px;
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+            }
+            .socialLink {
+                width: 30px;
+                height:50px;
+            }
+            .socialLink:hover {
+
+                color: #4ff7e9;
+            }
+            
+        }
+    }
+    
+
+
+
+
+
+    .resumeBody {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-color: #11acac80;
+        //background-color: #11acacb6;
+        //background-color: #4190b7;
+        border: 3px solid  rgba(255, 255, 0, 0.568);
+        border-top: none;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: -60px;
+
+
+        .resumeBodyLeft {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            //background-color: cadetblue;
+            background-color: #11acacb6;
+            width: 23%;
+            height: 100%;
+            padding-top: 30px;
+            overflow: hidden;
+            .resumeLeftContainer {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                width: 100%;
+                margin-left: 20px;
+                .header {
+                    display: flex;
+                    color: aliceblue;
+                    border-bottom: 1px solid #fff;
+                    padding-bottom: 10px;
+                }
+                
+                .listContainer {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    margin: 30px ;
+                    
+                    .list {
+                        overflow: hidden;
+                        display: flex;
+                        justify-content: flex-start;
+                        color: rgb(247, 248, 248);
+                        list-style: none;
+                        margin-bottom: 2px;
+                        
+                    }
+                    .list :hover {
+                        cursor: pointer;
+                        font-size: 17px;
+                        font-weight: bold;
+                        color: #4ff7e9;
+                    }
+                    .listIcon {
+                        margin-right: 10px;
+                        color: aqua;
+                        margin-top: 5px;
+                    }
+                  
+                }
+
+            }    
+            
+        }
+        .resumeBodyRight {
+            display: flex;
+            flex-direction: column;
+            //
+            background-color: rgba(95, 158, 160, 0);
+            width: 77%;
+            height: 100%;
+            padding: 50px;
+             h1 {
+                color: #ccd6f6;
+             }
+            .resumeBodyRightHeader {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: #ccd6f6;
+                .carrerObj {
+                    color: #ccd6f6;
+                }
+                .objectiveIcon {
+                    color: yellow;
+                }
+            }
+            .resumeBodyRightBody {
+                display: flex;
+                flex-direction:column;
+                justify-content: center;
+                align-items: flex-start;
+                padding-left: 20px;
+               
+                .resumeEducationContainer {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    padding-top: 10px;
+                    color: #ccd6f6;
+                    width: 100%;
+                }
+                .resumeWorkContainer {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    width: 100%;
+                }
+                .resumeHeadline {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    padding-bottom: -15px;
+                    width: 100%;
+                    height: 40px;
+                    border-bottom: 4px solid #14c7c7;
+                    margin-top: 50px;
+                    margin-bottom: 50px;
+
+                    h1 {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        width: 300px;
+                        height: 40px;
+                        padding-left: 10px;
+                        background-color: #14c7c7;
+                        color: #e4e9fa;
+                        border-top-right-radius: 60px;
+                    
+                    }
+                }
+                .experienceContainer {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding-top: 20px;
+
+                    .workHeader {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .workTitle {
+                            color: #14c7c7;
+                            margin-top: 20px;
+                            margin-right: 20px;
+                        }
+                        .siteLink {
+                            a  {
+                                padding-bottom: 5px;
+                                color: #c3f7f7cb;
+                            }
+                            a:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                    
+                    .resumeWork {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        .resumeWorkDate {
+                            color: #c1f744e8;
+                            font-weight: bold;
+                            margin-right: 15px;
+                        }
+                        .resumeDetails {
+                            font-size: 15px;
+                            margin-left: 10px;
+                            padding-left: 50px;
+                            border-left: 2px solid rgb(157, 228, 129);
+                            color: #ccd6f6;
+                        }
+                    }
+                }
+                
+            }
+            
+        }
+    }
+}
