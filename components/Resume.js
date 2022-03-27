@@ -5,13 +5,13 @@ import { BiPhoneCall, BiEnvelope, BiMap, BiWorld, BiBook } from 'react-icons/bi'
 import { FaPlaneDeparture, FaGithub, FaCodepen, FaLinkedinIn, FaRegEnvelope,FaEdit, FaMedapps } from 'react-icons/fa'
 import { WiDayCloudy } from 'react-icons/wi'
 import style from '../styles/MyResume.module.scss'
-import project from "../pages/project"
+import ExperienceCard from "./Helper/ExperienceCard"
 
 
 
 
 
-const Resume = ( { projects } ) => {
+const Resume = ( { resultData } ) => {
 
     return (
         <div>
@@ -20,7 +20,7 @@ const Resume = ( { projects } ) => {
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"></link>
             </Head>
-            <>
+            
                 <section className={style.resumeContainer}>
                     
                     <div className={style.resumeHead}>
@@ -99,9 +99,12 @@ const Resume = ( { projects } ) => {
                                 
                                 <article className={style.resumeWorkContainer}>
                                     <header className={style.resumeHeadline}><h1>PERSONAL WORK EXPERIENCE</h1></header>
-                                    <div className={style.experienceContainer}>
-                                        
-                                    </div>
+                                    
+                                    { resultData.map( work => (
+
+                                       <ExperienceCard work = { work }/>
+                                       
+                                    ))}
                                 </article>
 
                             </div>
@@ -109,23 +112,10 @@ const Resume = ( { projects } ) => {
                         </article>
                     </div> 
                 </section>
-            </>
+            
         </div> 
     ) 
 }
 
 export default Resume
-
-
-
-export const getStaticProps = async () => {
-    const response = await fetch('http://localhost:3000/api/projectInfos')
-    const projects = await response.json()
-
-    return {
-        props : {
-            projects,
-        }, 
-    }
-}
 
