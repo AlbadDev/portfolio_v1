@@ -1,0 +1,47 @@
+.sectionContainer {
+    display: flex;
+    flex-direction: column;
+    
+
+    .titleContainer {
+        display: flex;
+        padding-left: 10px;
+        
+        .cardTitle {
+            font-size: 17px;
+        }
+    }
+    .cardParagraph {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 80%;
+        .paragraph {
+            color: #b4cdec;
+            margin-left: 22px;
+        }
+    }
+
+    .technoContainer {
+        //background-color: #b4cdec;
+        width: 100%;
+        ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            //background-color: aliceblue;
+            height: 50px;
+            
+            .listTechno {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100px;
+                height: 40px;
+                border: 1px solid #b4cdec;
+                margin-left: 10px;
+                //background-color: aquamarine;
+            }
+        }
+    }
+}
