@@ -148,8 +148,6 @@
         justify-content: flex-start;
         align-items: flex-start;
         background-color: #11acac80;
-        //background-color: #11acacb6;
-        //background-color: #4190b7;
         border: 3px solid  rgba(255, 255, 0, 0.568);
         border-top: none;
         width: 100%;
@@ -163,7 +161,7 @@
         .resumeBodyLeft {
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
+            justify-content: space-between;
             align-items: flex-start;
             //background-color: cadetblue;
             background-color: #11acacb6;
@@ -219,7 +217,6 @@
         .resumeBodyRight {
             display: flex;
             flex-direction: column;
-            //
             background-color: rgba(95, 158, 160, 0);
             width: 77%;
             height: 100%;

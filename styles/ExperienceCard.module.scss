@@ -1,34 +1,36 @@
 .sectionContainer {
     display: flex;
     flex-direction: column;
-    
 
     .titleContainer {
         display: flex;
         padding-left: 10px;
         
         .cardTitle {
-            font-size: 17px;
+            font-size: 18px;
         }
     }
     .cardParagraph {
         display: flex;
-        justify-content: flex-start;
+        flex-direction: column;
+        //justify-content: flex-start;
         align-items: flex-start;
-        width: 80%;
+        width: 100%;
         .paragraph {
             color: #b4cdec;
             margin-left: 22px;
+            margin-bottom: -10px;
         }
     }
 
     .technoContainer {
         //background-color: #b4cdec;
         width: 100%;
+        margin-left: -15px;
         ul {
             display: flex;
             align-items: center;
-            list-style: none;
+            //list-style: none;
             //background-color: aliceblue;
             height: 50px;
             
@@ -37,10 +39,10 @@
                 justify-content: center;
                 align-items: center;
                 width: 100px;
-                height: 40px;
+                height: 25px;
                 border: 1px solid #b4cdec;
                 margin-left: 10px;
-                //background-color: aquamarine;
+                background-color: #14c7c7;
             }
         }
     }

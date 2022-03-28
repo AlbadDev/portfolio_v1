@@ -1,3 +1,4 @@
+import { MuiThemeProvider } from '@material-ui/core';
 import style from '../../styles/ExperienceCard.module.scss'
 
 const ExperienceCard = ({ work }) => {
@@ -8,7 +9,11 @@ const ExperienceCard = ({ work }) => {
                 <h1 className={style.cardTitle}>{work.title}</h1>
             </div>
             <div className={style.cardParagraph}>
-                <p className={style.paragraph}>{work.description}</p>
+                {
+                    work.mvp.map(mvp => (
+                        <p className={style.paragraph}>{mvp}</p>
+                    ))
+                }
             </div>
             <div className={style.technoContainer}>
                 <ul>
