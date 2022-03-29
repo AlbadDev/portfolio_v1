@@ -229,6 +229,7 @@
                 flex-direction: column;
                 align-items: center;
                 color: #ccd6f6;
+                margin-bottom: -30px;
                 .carrerObj {
                     color: #ccd6f6;
                 }
@@ -246,11 +247,13 @@
                 .resumeEducationContainer {
                     display: flex;
                     flex-direction: column;
-                    justify-content: flex-start;
+                    justify-content: space-between;
                     align-items: flex-start;
-                    padding-top: 10px;
+                    //padding-top: 10px;
                     color: #ccd6f6;
                     width: 100%;
+                    margin-top: 25px;
+                    //background-color: #ccd6f6;
                 }
                 .resumeWorkContainer {
                     display: flex;
