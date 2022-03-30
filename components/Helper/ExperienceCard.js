@@ -2,7 +2,7 @@ import Grid  from '@material-ui/core/Grid'
 import style from '../../styles/ExperienceCard.module.scss'
 import {BsCheckCircle} from 'react-icons/bs'
 import {FaGithub} from 'react-icons/fa'
-
+import Link from 'next/link'
 
 
 const ExperienceCard = ({ work }) => {
@@ -21,7 +21,7 @@ const ExperienceCard = ({ work }) => {
                 ))}
             </div>
             <div className={style.technoContainer}>
-               <div className={style.materialContainer}>
+                <div className={style.materialContainer}>
                     {work.material.map( material => (
                         <>
                             <ul className={style.listContainer}>
@@ -30,8 +30,14 @@ const ExperienceCard = ({ work }) => {
                             
                         </>
                     ))}
-               </div>
-                <div className={style.workGithub}><FaGithub width='50'/></div>
+                </div>
+                <div className={style.workGithub}>
+                    <Link href='/' target='_blank'>
+                        <FaGithub className={style.githubIcon}/>
+                    </Link>
+                    
+                    <h5>Visit GitHub</h5>
+                </div>
             </div>         
         </section> 
     )
