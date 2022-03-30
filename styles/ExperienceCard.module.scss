@@ -6,6 +6,7 @@
         padding-bottom: 10px;
         border-bottom: 1px solid #14c7c7;
         margin-right: 20px;
+        width: 100%;
         .workHeader {
             display: flex;
             align-items: center;
@@ -45,8 +46,13 @@
             width: 100%;
             
            .listContainer {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
                 list-style: none;
-                .listOfNvp {
+                //background-color: #ccd6f6;
+                margin-bottom: -10px;
+                .listOfMvp {
                     cursor: pointer;
                     display: flex;
                     justify-content: center;
