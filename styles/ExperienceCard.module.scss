@@ -66,28 +66,40 @@
         }
         .technoContainer {
             display: flex;
-            align-items: flex-start;
-            justify-content: flex-start;
+            justify-content: space-between;
+            align-items: center;
             list-style: none;
-            //background-color: #ccd6f6;
-            
-            .listContainer {
-                list-style: none;
 
-                .listOfTechno {
+            .materialContainer {
+                display: flex;
+                width: 75%;
+                .listContainer {
                     display: flex;
-                    align-items: center;
-                    padding: 5px;
-                    margin-right: 10px;
-                    height: 40px;
-                    border: 1px solid #14c7c7;
-                    color: #14c7c7;
-                    cursor: pointer;
+                    justify-content: flex-start;
+                    list-style: none;
+                    margin-right: -40px;
+                    
+                    .listOfTechno {
+                        display: flex;
+                        align-items: center;
+                        padding: 5px;
+                        margin-right: 10px;
+                        height: 40px;
+                        border: 1px solid #14c7c7;
+                        color: #14c7c7;
+                        cursor: pointer;
+                    }
+                    .listOfTechno:hover {
+                        background-color: #14c7c7;
+                        color: #ccd6f6;
+                    }
                 }
-                .listOfTechno:hover {
-                    background-color: #14c7c7;
-                    color: #ccd6f6;
-                }
+            }
+            .workGithub {
+                width: 25%;
+                color: tomato;
+                float: right;
+                margin-left: -30px;
             }
         }
     }
