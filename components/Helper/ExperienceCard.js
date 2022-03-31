@@ -24,9 +24,6 @@ const ExperienceCard = ({ work }) => {
                 <div className={style.materialContainer}>
                     {work.material.map( material => (
                         <>
-                            {/* <ul className={style.listContainer}>
-                                <li className={style.listOfTechno}>{material}</li>
-                            </ul> */}
                             <div className={style.listContainer}>
                                 <li className={style.listOfTechno}>{material}</li>
                             </div> 
@@ -34,8 +31,8 @@ const ExperienceCard = ({ work }) => {
                     ))}
                 </div>
                 <div className={style.workGithub}>
-                    <Link href='/' target='_blank'>
-                        <FaGithub className={style.githubIcon}/>
+                    <Link href={work.github}>
+                        <a target='_blank'><FaGithub className={style.githubIcon}/></a>
                     </Link>
                     
                     <h5>Visit GitHub</h5>
