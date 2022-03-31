@@ -24,10 +24,12 @@ const ExperienceCard = ({ work }) => {
                 <div className={style.materialContainer}>
                     {work.material.map( material => (
                         <>
-                            <ul className={style.listContainer}>
+                            {/* <ul className={style.listContainer}>
                                 <li className={style.listOfTechno}>{material}</li>
-                            </ul>
-                            
+                            </ul> */}
+                            <div className={style.listContainer}>
+                                <li className={style.listOfTechno}>{material}</li>
+                            </div> 
                         </>
                     ))}
                 </div>
