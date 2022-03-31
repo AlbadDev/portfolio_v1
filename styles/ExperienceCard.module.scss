@@ -4,8 +4,11 @@
         flex-direction: column;
         justify-content: flex-start;
         margin: 30px auto;
-        //padding-bottom: -10px;
+        padding-bottom: 10px;
         border-bottom: 1px solid #14c7c7;
+        //margin-right: 20px;
+        width: 100%;
+        //background-color: #ccd6f64b;
         .workHeader {
             display: flex;
             align-items: center;
@@ -75,11 +78,11 @@
                 //justify-content: flex-start;
                 width: 75%;
                 //background-color: #ccd6f6;
-                //border: 1px solid #14c7c7;
+                border: 1px solid #14c7c7;
                 .listContainer {
                     list-style: none;
                     align-items: center;
-                    padding-right: 10px;
+                    padding: 10px;
                     .listOfTechno {
                         display: flex;
                         align-items: center;
