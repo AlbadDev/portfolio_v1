@@ -102,7 +102,7 @@ const Resume = ( { resultData } ) => {
                                     
                                     { resultData.map( work => (
 
-                                       <ExperienceCard work = { work }/>
+                                       <ExperienceCard key={work.id.toString()} work = { work } />
                                        
                                     ))}
                                 </article>

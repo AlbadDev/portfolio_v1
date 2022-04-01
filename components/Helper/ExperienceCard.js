@@ -8,26 +8,26 @@ import Link from 'next/link'
 const ExperienceCard = ({ work }) => {
 
     return (
-        <section className={style.experienceCard}>
-            <div className={style.workHeader}>
+        <section key={work.id.toString()} className={style.experienceCard}>
+            <div  key={work.id.toString()} className={style.workHeader}>
                 <h2 className={style.workTitle}>{work.title}</h2>
                 <a href='' className={style.workView}>view</a>
             </div>
-            <div className={style.workDescription}>
-                {work.mvp.map( mvp => (
-                    <ul className={style.listContainer}>
-                        <li className={style.listOfMvp}><BsCheckCircle className={style.listIcon}/> {mvp}</li>
+            <div  key={work.id.toString()} className={style.workDescription}>
+                { work.mvp.map( mvp => (
+                    <ul key={mvp.toString()} className={style.listContainer}>
+                        <li key={mvp.toString()} className={style.listOfMvp} ><BsCheckCircle className={style.listIcon}/> {mvp}</li>
                     </ul>
                 ))}
             </div>
-            <div className={style.technoContainer}>
+            <div  key={work.id.toString()} className={style.technoContainer}>
                 <div className={style.materialContainer}>
                     {work.material.map( material => (
-                        <>
-                            <div className={style.listContainer}>
-                                <li className={style.listOfTechno}>{material}</li>
+                        // <>
+                            <div key={material.toString()} className={style.listContainer}>
+                                <li key={material.toString()} className={style.listOfTechno}>{material}</li>
                             </div> 
-                        </>
+                        // </>
                     ))}
                 </div>
                 <div className={style.workGithub}>
