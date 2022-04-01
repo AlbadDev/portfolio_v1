@@ -5,7 +5,7 @@ import Resume from '../components/Resume'
 const myResume = ( {resultData} ) => { 
 
     return (
-        <Resume key={resultData.toString()} resultData = {resultData} />
+        <Resume  resultData = {resultData} />
     )
     
 }

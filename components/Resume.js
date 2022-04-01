@@ -58,6 +58,9 @@ const Resume = ( { resultData } ) => {
                                     <li className={style.list}> <GiStarGate  className={style.listIcon} /><a href="https://reactjs.org/" target='_blank'>REACT JS</a></li>
                                     <li className={style.list}> <GiStarGate  className={style.listIcon} /><a href="https://nextjs.org/" target='_blank'>NEXTJS</a></li>
                                     <li className={style.list}> <GiStarGate  className={style.listIcon} /><a href="https://mui.com/" target='_blank'>MATERIAL-UI</a></li>
+                                    <li className={style.list}> <GiStarGate  className={style.listIcon} /><a href="https://sass-lang.com/" target='_blank'>SASS</a></li>
+                                    <li className={style.list}> <GiStarGate  className={style.listIcon} /><a href="https://firebase.google.com/?gclsrc=aw.ds" target='_blank'>FIREBASE</a></li>
+                                    <li className={style.list}> <GiStarGate  className={style.listIcon} /><a href="https://git-scm.com/" target='_blank'>GIT/ BASH</a></li>
                                 </div>
                             </div>
 
