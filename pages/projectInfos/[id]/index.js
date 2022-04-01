@@ -124,7 +124,7 @@ const project = ({project}) => {
                                     <Link href='/'><a><BsBoxArrowUpRight style={{color:'#ebdf34'}}/> Visite website</a></Link>
                                 </div>
                                 <div>
-                                    <Link href='/'><a><FaGithub style={{color:'#346beb'}}/> Check GitHub</a></Link>
+                                    <Link href={project.github}><a><FaGithub style={{color:'#346beb'}}/> Check GitHub</a></Link>
                                 </div>
                             </section>
                        </section>
