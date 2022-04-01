@@ -30,7 +30,7 @@ const project = ({project}) => {
                     <span className={style.visiteText}>Visite website</span> <Link href='/'><a className={style.visiteLink}><BsBoxArrowUpRight   className={style.icon}/> </a></Link>
                 </div>
                 <div className={style.websiteLink}>
-                    Check GitHub<Link href='/'><a><FaGithub  className={style.icon}/> </a></Link>
+                    Check GitHub<Link href={project.github}><a target='_blank'><FaGithub  className={style.icon}/> </a></Link>
                 </div>
             </div>
             <header className={style.header}>
