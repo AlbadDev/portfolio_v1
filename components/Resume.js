@@ -52,15 +52,15 @@ const Resume = ( { resultData } ) => {
                             <div className={style.resumeLeftContainer}>
                                 <h2 className={style.header}>SKILLS</h2>
                                 <div className={style.listContainer}>
-                                    <li className={style.list}><GiStarGate className={style.listIcon}/><a href="https://developer.mozilla.org/en-US/docs/Web/HTML#:~:text=HTML%20(HyperText%20Markup%20Language)%20is,functionality%2Fbehavior%20(JavaScript)." target='_blank'>HTML5</a></li>
-                                    <li className={style.list}><GiStarGate  className={style.listIcon}/><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target='_blank'>CSS3</a></li>
-                                    <li className={style.list}> <GiStarGate  className={style.listIcon} /><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target='_blank'>JAVASCRIPT</a></li>
-                                    <li className={style.list}> <GiStarGate  className={style.listIcon} /><a href="https://reactjs.org/" target='_blank'>REACT JS</a></li>
-                                    <li className={style.list}> <GiStarGate  className={style.listIcon} /><a href="https://nextjs.org/" target='_blank'>NEXTJS</a></li>
-                                    <li className={style.list}> <GiStarGate  className={style.listIcon} /><a href="https://mui.com/" target='_blank'>MATERIAL-UI</a></li>
-                                    <li className={style.list}> <GiStarGate  className={style.listIcon} /><a href="https://sass-lang.com/" target='_blank'>SASS</a></li>
-                                    <li className={style.list}> <GiStarGate  className={style.listIcon} /><a href="https://firebase.google.com/?gclsrc=aw.ds" target='_blank'>FIREBASE</a></li>
-                                    <li className={style.list}> <GiStarGate  className={style.listIcon} /><a href="https://git-scm.com/" target='_blank'>GIT/ BASH</a></li>
+                                    <li className={style.list}> <GiStarGate className={style.listIcon}/> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML#:~:text=HTML%20(HyperText%20Markup%20Language)%20is,functionality%2Fbehavior%20(JavaScript)." target='_blank'>HTML5</a></li>
+                                    <li className={style.list}> <GiStarGate  className={style.listIcon}/> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target='_blank'>CSS3</a></li>
+                                    <li className={style.list}> <GiStarGate  className={style.listIcon} /> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target='_blank'>JAVASCRIPT</a></li>
+                                    <li className={style.list}> <GiStarGate  className={style.listIcon} /> <a href="https://reactjs.org/" target='_blank'>REACT JS</a></li>
+                                    <li className={style.list}> <GiStarGate  className={style.listIcon} /> <a href="https://nextjs.org/" target='_blank'>NEXTJS</a></li>
+                                    <li className={style.list}> <GiStarGate  className={style.listIcon} /> <a href="https://mui.com/" target='_blank'>MATERIAL-UI</a></li>
+                                    <li className={style.list}> <GiStarGate  className={style.listIcon} /> <a href="https://sass-lang.com/" target='_blank'>SASS</a></li>
+                                    <li className={style.list}> <GiStarGate  className={style.listIcon} /> <a href="https://firebase.google.com/?gclsrc=aw.ds" target='_blank'>FIREBASE</a></li>
+                                    <li className={style.list}> <GiStarGate  className={style.listIcon} /> <a href="https://git-scm.com/" target='_blank'>GIT/ BASH</a></li>
                                 </div>
                             </div>
 
@@ -81,6 +81,16 @@ const Resume = ( { resultData } ) => {
                                     <li className={style.list}><FaPlaneDeparture className={style.listIcon}/>TRAVEL</li>
                                     <li className={style.list}><GiEightBall className={style.listIcon}/>PLAY POOL TABLE</li>
                                     <li className={style.list}><WiDayCloudy className={style.listIcon}/> ENJOY THE VIEW</li>
+                                </div>
+                            </div>
+
+                            <div className={style.resumeLeftContainer}>
+                                <h2 className={style.header}>TECH BOOK</h2>
+                                <div className={style.listContainer}>
+                                    <li className={style.list}><BiBook className={style.listIcon}/>SECRET OF JAVASCRIPT NINJA</li>
+                                    <li className={style.list}><BiBook className={style.listIcon}/>YOU DON'T KNOW JS</li>
+                                    <li className={style.list}><BiBook className={style.listIcon}/>ELOQUENT JS</li>
+                                    <li className={style.list}><BiBook className={style.listIcon}/>30 DAYS OF REACTJ</li>
                                 </div>
                             </div>
                         </article>
