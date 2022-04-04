@@ -42,7 +42,10 @@ const Resume = ( { resultData } ) => {
                                     <li><a href="mailto:mamesaliou@gmail.com" ><FaRegEnvelope className={style.socialLink}/></a></li>
                                 </ol>
                             </div>
-                            <div><FiDownload className={style.socialLink}/></div>
+                            <div className={style.downloadContainer}>
+                                <FiDownload className={style.socialLink}/>
+                                <h4 className={style.text}>Get white paper</h4>
+                            </div>
                         </article>  
                     </div>
 

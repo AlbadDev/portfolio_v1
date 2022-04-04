@@ -134,6 +134,20 @@
 
                 color: #4ff7e9;
             }
+
+            .downloadContainer {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-right: 80px;
+                color: #14c7c7;
+                margin-top: -25px;
+
+                .text {
+                    margin-top: -10px;
+                    color: #ccd6f6;
+                }
+            }
             
         }
     }
