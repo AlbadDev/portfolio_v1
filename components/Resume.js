@@ -4,6 +4,7 @@ import { GiStarGate, GiEightBall } from 'react-icons/gi'
 import { BiPhoneCall, BiEnvelope, BiMap, BiWorld, BiBook } from 'react-icons/bi'
 import { FaPlaneDeparture, FaGithub, FaCodepen, FaLinkedinIn, FaRegEnvelope,FaEdit, FaMedapps } from 'react-icons/fa'
 import { WiDayCloudy } from 'react-icons/wi'
+import { FiDownload } from 'react-icons/fi'
 import style from '../styles/MyResume.module.scss'
 import ExperienceCard from "./Helper/ExperienceCard"
 
@@ -16,7 +17,7 @@ const Resume = ( { resultData } ) => {
     return (
         <div>
             <Head>
-                <title>Albad | Project</title>
+                <title>Albad | Resume</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"></link>
             </Head>
@@ -39,10 +40,9 @@ const Resume = ( { resultData } ) => {
                                     <li><a href="https://linkedin.com/AlbadDev" target='_blank'><FaLinkedinIn className={style.socialLink}/></a></li>
                                     <li><a href="https://codepen.io/AlbadDev" target='_blank'><FaCodepen className={style.socialLink}/></a></li>
                                     <li><a href="mailto:mamesaliou@gmail.com" ><FaRegEnvelope className={style.socialLink}/></a></li>
-                                    
-
                                 </ol>
                             </div>
+                            <div><FiDownload className={style.socialLink}/></div>
                         </article>  
                     </div>
 
@@ -55,6 +55,7 @@ const Resume = ( { resultData } ) => {
                                     <li className={style.list}> <GiStarGate className={style.listIcon}/> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML#:~:text=HTML%20(HyperText%20Markup%20Language)%20is,functionality%2Fbehavior%20(JavaScript)." target='_blank'>HTML5</a></li>
                                     <li className={style.list}> <GiStarGate  className={style.listIcon}/> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target='_blank'>CSS3</a></li>
                                     <li className={style.list}> <GiStarGate  className={style.listIcon} /> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target='_blank'>JAVASCRIPT</a></li>
+                                    <li className={style.list}> <GiStarGate  className={style.listIcon} /> <a href="https://www.typescriptlang.org/" target='_blank'>TYPESCRIPT</a></li>
                                     <li className={style.list}> <GiStarGate  className={style.listIcon} /> <a href="https://reactjs.org/" target='_blank'>REACT JS</a></li>
                                     <li className={style.list}> <GiStarGate  className={style.listIcon} /> <a href="https://nextjs.org/" target='_blank'>NEXTJS</a></li>
                                     <li className={style.list}> <GiStarGate  className={style.listIcon} /> <a href="https://mui.com/" target='_blank'>MATERIAL-UI</a></li>
