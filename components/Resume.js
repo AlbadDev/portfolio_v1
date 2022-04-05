@@ -44,7 +44,7 @@ const Resume = ( { resultData } ) => {
                             </div>
                             <div className={style.downloadContainer}>
                                 <FiDownload className={style.socialLink}/>
-                                <h4 className={style.text}>Get white paper</h4>
+                                <h4 className={style.text}>Get White Paper</h4>
                             </div>
                         </article>  
                     </div>
