@@ -7,6 +7,7 @@ import { WiDayCloudy } from 'react-icons/wi'
 import { FiDownload } from 'react-icons/fi'
 import style from '../styles/MyResume.module.scss'
 import ExperienceCard from "./Helper/ExperienceCard"
+import { Link } from "@material-ui/core"
 
 
 
@@ -91,10 +92,10 @@ const Resume = ( { resultData } ) => {
                             <div className={style.resumeLeftContainer}>
                                 <h2 className={style.header}>TECH BOOK</h2>
                                 <div className={style.listContainer}>
-                                    <li className={style.list}><BiBook className={style.listIcon}/>SECRET OF JAVASCRIPT NINJA</li>
-                                    <li className={style.list}><BiBook className={style.listIcon}/>YOU DON'T KNOW JS</li>
-                                    <li className={style.list}><BiBook className={style.listIcon}/>ELOQUENT JS</li>
-                                    <li className={style.list}><BiBook className={style.listIcon}/>30 DAYS OF REACTJ</li>
+                                    <li className={style.list}><BiBook className={style.listIcon}/><Link href="https://www.pdfdrive.com/secrets-of-the-javascript-ninja-second-edition-e44753452.html "><a target="_blank">SECRET OF JAVASCRIPT NINJA</a></Link></li>
+                                    <li className={style.list}><BiBook className={style.listIcon}/><Link href="https://www.pdfdrive.com/you-dont-know-js-es6-beyond-d183828940.html "><a target="_blank">YOU DON'T KNOW JS</a></Link></li>
+                                    <li className={style.list}><BiBook className={style.listIcon}/><Link href="https://www.pdfdrive.com/eloquent-javascript-a-modern-introduction-to-programming-e158409266.html "><a target="_blank">ELOQUENT JS</a></Link></li>
+                                    <li className={style.list}><BiBook className={style.listIcon}/><Link href="https://www.pdfdrive.com/react-in-action-e158339623.html "><a target="_blank">REACT IN ACTION</a></Link></li>
                                 </div>
                             </div>
                         </article>
