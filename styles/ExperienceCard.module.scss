@@ -59,6 +59,7 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    font-size: 14px;
                     .listIcon {
                         margin-right: 10px;
                         color: #14c7c7;
@@ -78,11 +79,10 @@
                 //justify-content: flex-start;
                 width: 75%;
                 //background-color: #ccd6f6;
-                //border: 1px solid #14c7c7;
                 .listContainer {
                     list-style: none;
                     align-items: center;
-                    padding: 10px;
+                    padding-right: 10px;
                     .listOfTechno {
                         display: flex;
                         align-items: center;
