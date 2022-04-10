@@ -105,7 +105,9 @@ const Resume = ( { resultData } ) => {
                             <div className={style.resumeBodyRightHeader}>
                                 <h2 className={style.carrerObj}><FaMedapps className={style.objectiveIcon} /> CAREER OBJECTIVE</h2>
                                 <p>
-                                    Inventive Front End Developer with 3+ years of broad expertise in UI/UX & Design, JavaScript/ES6/ES2017 areas with willingness to learn and master Back-end Development and Web Servers Administration. Testing, DDD/TDD expert.
+                                    A motivated individual with in-depth knowledge of languages and development tools, 
+                                    seeking for a full time , part time or internship position in a growth-oriented company where I can use my skills 
+                                    to the advantage of the company while learning and having the scope to develop my own skills.
                                 </p>
                             </div>
 
