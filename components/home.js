@@ -23,7 +23,7 @@ const Home = () => {
                     </p>
                 </Grid>
             </Grid>
-            <Grid item={true} xs={4}>
+            <Grid item={true} xs={4} >
                 <Social />
             </Grid>
         </section>

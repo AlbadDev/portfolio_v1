@@ -7,8 +7,7 @@
     height: 550px;
     position: sticky;
     top: 5rem;
-    bottom: 5rem;
-
+    //bottom: 30rem;
     ul {
         list-style: none;
         display: inline;
@@ -22,8 +21,28 @@
             height:90;
             cursor: 'pointer'
             }
+            .gitHub {
+                color: rgb(110, 17, 216);
+            }
+            .linkedIn {
+                color: rgb(78, 78, 252);
+            }
+            .linkedIn:hover {
+                color: rgb(21, 21, 150);
+            }
+            .gitHub:hover {
+                color: black;
+            }
+            .codePen {
+                color: #fff;
+            }
+            .codePen:hover {
+                color: black;
+            }
         }
+        
     }
+    
     
 }
 .Link {
@@ -31,6 +50,7 @@
     height:90px;
     cursor: 'pointer'
 }
+
 .social::after {
     content: "";
     display: block;
