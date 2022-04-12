@@ -37,15 +37,15 @@ const Resume = ( { resultData } ) => {
                         <article className={style.resumesocialLink}>
                             <div className={style.userContact}>
                                 <ol>
-                                    <li><a href="https://github.com/AlbadDev" target='_blank'><FaGithub className={style.socialLink}/></a></li>
-                                    <li><a href="https://linkedin.com/AlbadDev" target='_blank'><FaLinkedinIn className={style.socialLink}/></a></li>
-                                    <li><a href="https://codepen.io/AlbadDev" target='_blank'><FaCodepen className={style.socialLink}/></a></li>
-                                    <li><a href="mailto:mamesaliou@gmail.com" ><FaRegEnvelope className={style.socialLink}/></a></li>
+                                    <li><a href="https://github.com/AlbadDev" target='_blank' className={style.gitHub}><FaGithub className={style.socialLink}/></a></li>
+                                    <li><a href="https://linkedin.com/AlbadDev" target='_blank' className={style.linkedIn}><FaLinkedinIn className={style.socialLink}/></a></li>
+                                    <li><a href="https://codepen.io/AlbadDev" target='_blank' className={style.codePen}><FaCodepen className={style.socialLink}/></a></li>
+                                    <li><a href="mailto:mamesaliou@gmail.com" className={style.mailTo}><FaRegEnvelope  className={style.socialLink}/></a></li>
                                 </ol>
                             </div>
                             <div className={style.downloadContainer}>
                             <h4 className={style.text}>Download Resume</h4>
-                                <a href="/"><FiDownload className={style.socialLink}/></a>
+                                <a href="/" className={style.download}><FiDownload className={style.socialLink}/></a>
                             </div>
                         </article>  
                     </div>
