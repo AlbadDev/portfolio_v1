@@ -106,16 +106,15 @@ const Resume = ( { resultData } ) => {
                                 <h2 className={style.carrerObj}><FaMedapps className={style.objectiveIcon} /> CAREER OBJECTIVE</h2>
                                 <p>
                                     A motivated individual with in-depth knowledge of languages and development tools, 
-                                    seeking for a full time , part time or internship position in a growth-oriented company where I can use my skills 
-                                    to the advantage of the company while learning and having the scope to develop my own skills.
+                                    seeking for a full time , part time or internship role as a Junior Front-End Software Engineers
+                                    in a growth-oriented company where I can use my skills
+                                    to the advantage of the company while learning and growing with a diverse team that works towards 
+                                    contributing to the company’s vision and goals.
                                 </p>
                             </div>
 
                             <div className={style.resumeBodyRightBody}>
-                                <article className={style.resumeEducationContainer}>
-                                    <header className={style.resumeHeadline}><h1>EDUCATION</h1></header>
-                                    <p>University of Tokyo, 2003 - 2010. Space Sciences - Astronomy, Observational Astronomy. Infrared Astronomy.high-volume online service that helped prioritize developing activities and reduce ad hoc work requests by 35%</p>
-                                </article>
+                                
                                 
                                 <article className={style.resumeWorkContainer}>
                                     <header className={style.resumeHeadline}><h1>PERSONAL WORK EXPERIENCE</h1></header>
@@ -125,6 +124,11 @@ const Resume = ( { resultData } ) => {
                                        <ExperienceCard key={work.id.toString()} work = { work } />
                                        
                                     ))}
+                                </article>
+
+                                <article className={style.resumeEducationContainer}>
+                                    <header className={style.resumeHeadline}><h1>EDUCATION</h1></header>
+                                    <p>University of Tokyo, 2003 - 2010. Space Sciences - Astronomy, Observational Astronomy. Infrared Astronomy.high-volume online service that helped prioritize developing activities and reduce ad hoc work requests by 35%</p>
                                 </article>
 
                             </div>

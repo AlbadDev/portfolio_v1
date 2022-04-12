@@ -15,13 +15,15 @@ const about = () => {
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"></link>
             </Head>
+
             <div className={style.about_me}>
                 <h4 className={style.about} >About Me</h4>
             </div>
+
             <section className={style.section}>
                 <section className={style.info} >
+
                     <Grid container  className={style.picture} item={true}>
-                       
                        <Grid item xs={6} className={style.imageContainer}>
                             <Image src={profilPic} alt='Albad_profile' height={250} width={250} className={style.profile} sm={6} lg={12}/>
                        </Grid>
@@ -30,6 +32,7 @@ const about = () => {
                            <a href = "mailto: alioubkeita95@gmail.com" target='_blank'  rel="noreferrer"><div><FaEnvelope/></div> Mail</a>
                        </Grid>
                     </Grid>
+
                     <Grid item={true} sm={12} lg={8} className={style.personal_info} >
                         <h4 className={style.salutation}>Hi {<FaHandSpock style={{color: '#E1AE37'}}/>}, I &apos; m </h4>
                         <h2 className={style.name}>Alieu Badara Keita</h2>
@@ -43,6 +46,11 @@ const about = () => {
                              When I&#39;m not in front of a computer screen, I&#39;m probably out enjoying the view, playing pool table, reading books or crossing off another item on my bucket list.
                         </p>
                     </Grid>
+
+                    <Grid className={style.currentJopSeek}>
+                        <p>Currently looking for new life-changing opportunities! If you like what you see, let's get in touch!</p>
+                    </Grid>
+
                     <div className={style.skills_container}>
                         <div style={{display: "flex",justifyContent: "center",alignItems:"center"}}>
                             <h4 style={{color: '#8892b0'}}> Here are a few technologies I’ve been working with recently </h4>
