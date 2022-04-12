@@ -5,6 +5,9 @@
     justify-content: flex-start;
     align-items: center;
     height: 550px;
+    position: sticky;
+    top: 5rem;
+    bottom: 5rem;
 
     ul {
         list-style: none;
