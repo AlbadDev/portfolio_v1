@@ -98,6 +98,7 @@
         justify-content: center;
         align-items: center;
         padding: 15px;
+        //background-color: aquamarine;
         h2 {
             color:  #ccd6f6;
             letter-spacing: 1px;
@@ -114,17 +115,30 @@
             font-size: 30px;
             font-family: courier;
         }
-    }
 
-    .currentJopSeek {
-        margin: 10px 0px ;
-        border-top: 1px solid gray;
-        border-bottom: 1px solid gray;
+        .currentJopSeek {
+            width: 100%;
+            margin: 20px 0px ;
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+    
+            p {
+                color:#bfccf7;
 
-        p {
-            color:#bfccf7;
+                .link {
+                    font-family: 'Courier New', Courier, monospace;
+                    font-weight: bold;
+                    color: #14c7c7;
+                }
+                .link:hover {
+                    text-decoration: underline;
+                }
+            }
         }
+
     }
+
+    
 
 
 

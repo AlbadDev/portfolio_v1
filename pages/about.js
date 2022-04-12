@@ -45,11 +45,14 @@ const about = () => {
                              <span style={{background: 'yellow',color: "black"}}>My goal is to always build applications that are scalable and efficient under the hood while providing engaging, pixel-perfect user experiences.</span>
                              When I&#39;m not in front of a computer screen, I&#39;m probably out enjoying the view, playing pool table, reading books or crossing off another item on my bucket list.
                         </p>
+
+                        <Grid className={style.currentJopSeek}>
+                            <p>Currently looking for new life-changing opportunities! If you like what you <a href="/project" className={style.link}>see</a>, let's get in <a href="mailto:i.alioubkeita95@gmail.com" target="_blank" rel="noopener noreferrer" className={style.link}>touch</a>!</p>
+                        </Grid>
+
                     </Grid>
 
-                    <Grid className={style.currentJopSeek}>
-                        <p>Currently looking for new life-changing opportunities! If you like what you see, let's get in touch!</p>
-                    </Grid>
+                    
 
                     <div className={style.skills_container}>
                         <div style={{display: "flex",justifyContent: "center",alignItems:"center"}}>
