@@ -131,18 +131,22 @@
             .socialLink {
                 width: 30px;
                 height:50px;
+                animation: float 5s ease-in-out infinite;
             }
             .gitHub {
                 color: black;
             }
             .linkedIn {
-                color: blue;
+                color: rgb(46, 46, 245);
+                animation-delay: 1s;
             }
             .codePen {
                 color: #fff;
+                animation-delay: 2s;
             }
             .mailTo {
                 color: #fffb;
+                //animation-delay: 3s;
             }
             .gitHub:hover {
                 transform: rotate(30deg);
@@ -160,6 +164,21 @@
                 transform: rotate(340deg);
                 color: rgba(255, 255, 255, 0.37);
             }
+
+            @keyframes float {
+                0% {
+                    transform: translateY(0);
+                }
+                50% {
+                    transform: translate(-15%);
+                }
+                100% {
+                    transform: translateX(0);
+                }
+            }
+
+
+
             .downloadContainer {
                 display: flex;
                 justify-content: center;
@@ -241,7 +260,7 @@
                     }
                     .list :hover {
                         cursor: pointer;
-                        font-weight: 500;
+                        font-weight: 5  00;
                         color: #4ff7e9;
                     }
                     .listIcon {
