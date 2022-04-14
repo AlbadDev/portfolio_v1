@@ -141,28 +141,24 @@
                 animation-delay: 1s;
             }
             .codePen {
-                color: #fff;
+                color: rgba(255, 255, 255, 0.719);
                 animation-delay: 2s;
             }
             .mailTo {
-                color: #fffb;
-                //animation-delay: 3s;
+                color: rgba(25, 162, 241, 0.733);
+                animation-delay: 4s;
             }
             .gitHub:hover {
-                transform: rotate(30deg);
                 color: rgba(0, 0, 0, 0.466);
             }
             .linkedIn:hover {
-                transform: rotate(340deg);
-                color: rgba(0, 0, 255, 0.397);
+                color: rgba(47, 47, 245, 0.829);
             }
             .codePen:hover {
-                transform: rotate(40deg);
                 color: rgba(255, 255, 255, 0.514);
             }
             .mailTo:hover {
-                transform: rotate(340deg);
-                color: rgba(255, 255, 255, 0.37);
+                color: rgba(25, 162, 241, 0.493);
             }
 
             @keyframes float {
@@ -170,10 +166,12 @@
                     transform: translateY(0);
                 }
                 50% {
-                    transform: translate(-15%);
+                    transform: translateY(-15%);
+                    top: 2px;
                 }
                 100% {
-                    transform: translateX(0);
+                    transform: translateY(0);
+                    top: 5px;
                 }
             }
 

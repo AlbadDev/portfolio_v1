@@ -10,10 +10,10 @@ const Navbar = () => {
             <i>Albad</i>
             <section className={style.section}>
                 <ul>
-                    <li><Link href='/'>Home</Link></li>
-                    <li><Link href='/about'>About</Link></li>
-                    <li><Link href='/project'>Work</Link></li>
-                    <li className={style.resume} style={{color:'#14c7c7'}}><Link href='/resume'>Resume</Link></li>
+                    <li><Link href='/'><a>Home</a></Link></li>
+                    <li><Link href='/about'><a>About</a></Link></li>
+                    <li><Link href='/project'><a>Work</a></Link></li>
+                    <li className={style.resume} style={{color:'#14c7c7'}}><Link href='/resume'><a>Resume</a></Link></li>
                     
                 </ul>
             </section>
