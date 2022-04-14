@@ -134,7 +134,7 @@
                 animation: float 5s ease-in-out infinite;
             }
             .gitHub {
-                color: black;
+                color: rgba(0, 0, 0, 0.986);
             }
             .linkedIn {
                 color: rgb(46, 46, 245);
@@ -142,14 +142,14 @@
             }
             .codePen {
                 color: rgba(255, 255, 255, 0.719);
-                animation-delay: 2s;
+                animation-delay: 4s;
             }
             .mailTo {
                 color: rgba(25, 162, 241, 0.733);
-                animation-delay: 4s;
+                animation-delay: 6s;
             }
             .gitHub:hover {
-                color: rgba(0, 0, 0, 0.466);
+                color: rgba(235, 238, 247, 0.418);
             }
             .linkedIn:hover {
                 color: rgba(47, 47, 245, 0.829);
