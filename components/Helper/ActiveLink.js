@@ -29,7 +29,7 @@ const ActiveLink = ({ router, href, children }) => {
     return (
         <div>
             <a href={href} onClick={handleClick} style={{
-                color : isCurrentPath ? ' #14c7c7' : '#fff',
+                color : isCurrentPath ? '#fff ' : ' #14c7c7',
                 fontWeight: isCurrentPath ? 'bold' : null 
                 
             }}>
