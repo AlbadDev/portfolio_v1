@@ -6,6 +6,7 @@ import { useEffect } from 'react'
 const ActiveLink = ({ router, href, children }) => {
 
     // nextjs prefecth router attribute allow us to prefeth the state of router when page load
+    
     useEffect( () => {
     (function prefetchPage () {
         if(typeof window !== 'underfined') {
@@ -13,8 +14,12 @@ const ActiveLink = ({ router, href, children }) => {
         }
     })()
    })
+
    let handleClick ;
     // add click handle even to track and push new url to router
+    // useEffect allow us to bypass no router intance error from next/router
+    // because During Pre-rendering (SSR or SSG) access a router method like push is not support
+
    useEffect(() => {
     handleClick= (even) => {
         even.preventDefault()
