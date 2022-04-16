@@ -36,7 +36,6 @@
                 font-size: 26px;
                 font-family: 'SF Mono','Fira Code','Fira Mono','Roboto Mono',monospace;
                 text-decoration-color: #14c7c7;
-                
                 a:active{
                     color: aliceblue;
                 }
@@ -61,8 +60,8 @@
     color: #14c7c7;
     border: 1px solid #14c7c7;
     border-radius: 5px;
-    padding: 13px;
-    
+    padding: 8px;
+    transform: skew(12deg)
 }
 
 .resume:hover {
