@@ -5,8 +5,9 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
 
+  }
+  
 a {
   color: inherit;
   text-decoration: none;
@@ -14,6 +15,7 @@ a {
 
 * {
   box-sizing: border-box;
+  
 }
 
 @font-face {
@@ -23,4 +25,3 @@ a {
   font-weight: 400;
   font-display: swap;
 }
-

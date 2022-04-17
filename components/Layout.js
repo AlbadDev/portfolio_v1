@@ -16,7 +16,7 @@ const Layout = ({children}) => {
                 />
             </Head>
             <Navbar />
-            <main key={children.toString()} className={style.main}>
+            <main key={children.toString()} className={style.main} >
                 { children } 
             </main>
             <Footer />
