@@ -18,7 +18,7 @@ const project = ({project}) => {
             <Head>
                 <title>Project | {project.title}</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-                <link rel="stylesheet" href="/gh/devicons/devicon@v2.14.0/devicon.min.css"></link>
+                <link  href="/gh/devicons/devicon@v2.14.0/devicon.min.css"></link>
             </Head>
         <div className={style.projectName}>
                 <h4 className={style.name} >{project.title}</h4>
