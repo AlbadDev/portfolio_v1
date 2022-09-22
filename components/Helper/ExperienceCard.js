@@ -35,7 +35,7 @@ const ExperienceCard = ({ work }) => {
                         <a target='_blank'><FaGithub className={style.githubIcon}/></a>
                     </Link>
                     
-                    <h5>Visit GitHub</h5>
+                    
                 </div>
             </div>         
         </section> 

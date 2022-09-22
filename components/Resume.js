@@ -44,7 +44,7 @@ const Resume = ( { resultData } ) => {
                                 </ol>
                             </div>
                             <div className={style.downloadContainer}>
-                            <h4 className={style.text}>Download Resume</h4>
+                            <h4 className={style.text}>Download White Resume</h4>
                                 <a href="/" className={style.download}><FiDownload className={style.socialLink}/></a>
                             </div>
                         </article>  
