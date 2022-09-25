@@ -22,22 +22,25 @@
             cursor: 'pointer'
             }
             .gitHub {
-                color: rgb(110, 17, 216);
+                color: rgba(110, 17, 216, 0.534);
+                
             }
             .linkedIn {
-                color: rgb(78, 78, 252);
+                color: rgba(28, 28, 170, 0.678);
             }
             .linkedIn:hover {
-                color: rgb(21, 21, 150);
+                color: rgb(28, 28, 170);
             }
             .gitHub:hover {
-                color: rgba(110, 17, 216, 0.534);
+                color: rgb(25, 25, 221);
+                
             }
             .codePen {
-                color: #fff;
+                color: rgba(255, 255, 255, 0.514);
             }
             .codePen:hover {
-                color: rgba(255, 255, 255, 0.514);
+                color: #fff;
+                
             }
         }
         
