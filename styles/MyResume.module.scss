@@ -89,16 +89,16 @@
             float: left;
             align-items: center;
             color: aquamarine;
-            background-color: rgb(10, 10, 10);
-            border: 3px solid  rgba(255, 255, 0, 0.568);
+            //background-color: rgb(10, 10, 10);
+            //border: 3px solid  rgba(255, 255, 0, 0.568);
             margin-top: -60px;
             margin-left: 40px;
-            width: 20%;
+            width: 300px;
             height: 150px;
             z-index: 1;
-            border-radius: 50%;
+            border-radius: 100%;
             .profilPic {
-                border-radius: 50%;
+                border-radius:100% ;
                 margin: 10px;
                 background: #14c7c7d0;
             }

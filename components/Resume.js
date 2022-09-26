@@ -32,7 +32,7 @@ const Resume = ( { resultData } ) => {
                     
                     <div className={style.myResume}>
                         <article className={style.resumeProfilContainer}>
-                            <Image className={style.profilPic} src='https://avatars.githubusercontent.com/u/45886747?s=400&u=2ce94d8ac2307558b5d5f0651302d79e9d9775b3&v=4' width='150' height='150'/>
+                            <Image className={style.profilPic} src='https://avatars.githubusercontent.com/u/45886747?s=400&u=2ce94d8ac2307558b5d5f0651302d79e9d9775b3&v=4' width='200' height='200'/>
                         </article>
                         <article className={style.resumesocialLink}>
                             <div className={style.userContact}>
