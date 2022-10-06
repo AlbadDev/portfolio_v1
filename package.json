@@ -24,11 +24,8 @@
   },
   "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
   "main": "data.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AlbadDev/portfolio_v1.git"
-  },
-  "author": "",
+  "repository": "git+https://github.com/AlbadDev/portfolio_v1.git",
+  "author": "albaddev <alioubkeita95@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/AlbadDev/portfolio_v1/issues"
