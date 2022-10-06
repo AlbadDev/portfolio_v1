@@ -11,8 +11,6 @@ import { Link } from "@material-ui/core"
 
 
 
-
-
 const Resume = ( { resultData } ) => {
 
     return (
@@ -45,7 +43,7 @@ const Resume = ( { resultData } ) => {
                             </div>
                             <div className={style.downloadContainer}>
                             <h4 className={style.text}>Download White Resume</h4>
-                                <a href="/" className={style.download}><FiDownload className={style.socialLink}/></a>
+                                <a href='../public/albadResume.pdf' className={style.download} download><FiDownload className={style.socialLink}/></a>
                             </div>
                         </article>  
                     </div>
