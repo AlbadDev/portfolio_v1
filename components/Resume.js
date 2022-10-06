@@ -70,9 +70,9 @@ const Resume = ( { resultData } ) => {
                             <div className={style.resumeLeftContainer}>
                                 <h2 className={style.header}> CONTACTS</h2>
                                 <div className={style.listContainer}>
-                                    <li className={style.list}><BiPhoneCall className={style.listIcon}/><a href="tel:+220 345 10 04">345 10 04</a> </li>
-                                    <li className={style.list}><BiEnvelope className={style.listIcon} /> <a href="mailto:mamesaliou@gmail.com"> mamesaliou@gmail.com</a></li>
-                                    <li className={style.list}><BiMap className={style.listIcon}/><a href='https://gisgeography.com/senegal-map/' target='_blank'>SENEGAL</a> </li>
+                                    <li className={style.list}><BiPhoneCall className={style.listIcon}/><a href="tel:+220 345 10 04">+220 345 10 04</a> </li>
+                                    <li className={style.list}><BiEnvelope className={style.listIcon} /> <a href="mailto:mamesaliou@gmail.com"> alioubkeita95@gmail.com</a></li>
+                                    <li className={style.list}><BiMap className={style.listIcon}/><a href='https://gisgeography.com/gambia-map/' target='_blank'>Gambia</a> </li>
                                     <li className={style.list}><BiWorld className={style.listIcon}/><a href="https://www.albaddev.io" target="_blank">www.albaddev.io</a> </li>
                                 </div>
                             </div>
@@ -126,7 +126,8 @@ const Resume = ( { resultData } ) => {
 
                                 <article className={style.resumeEducationContainer}>
                                     <header className={style.resumeHeadline}><h1>EDUCATION</h1></header>
-                                    <p>University of Tokyo, 2003 - 2010. Space Sciences - Astronomy, Observational Astronomy. Infrared Astronomy.high-volume online service that helped prioritize developing activities and reduce ad hoc work requests by 35%</p>
+                                    <h2>Self-taugth: </h2>
+                                    <p>Object Oriented Programming, Functional Programming, Data Structures, Algorithms with problem solving mind set and try developing soft skills to get better day to day. </p>
                                 </article>
 
                             </div>
