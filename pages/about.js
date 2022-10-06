@@ -28,7 +28,7 @@ const about = () => {
                             <Image src={profilPic} alt='Albad_profile' height={250} width={250} className={style.profile} sm={6} lg={12}/>
                        </Grid>
                        <Grid item className={style.connectContainer}>
-                           <Link href='https://www.linkedin.com/in/alioune-badara-keita-ba1a3a205/'><a target='_blank'  rel="noreferrer">Connect</a></Link>
+                           <Link href='https://www.linkedin.com/in/alieu-badara-keita-ba1a3a205/'><a target='_blank'  rel="noreferrer">Connect</a></Link>
                            <a href = "mailto: alioubkeita95@gmail.com" target='_blank'  rel="noreferrer"><div><FaEnvelope/></div> Mail</a>
                        </Grid>
                     </Grid>
@@ -109,6 +109,10 @@ const about = () => {
                 <Grid item={true} xs={2} className={style.social}>
                     <Social />
                 </Grid>
+            </section>
+            <section className={style.goToWorkButton}>
+           
+                <Link  href='/project'><a   rel="noreferrer" className={style.button}>Go To Work <span className={style.arrow}>&#x2192;</span></a></Link>
             </section>
         </>
     )

@@ -20,8 +20,8 @@ const ProjectDetails = ({work}) => {
                                 </a>
                             </Link>
 
-                            <Link href='/'>
-                                <a> 
+                            <Link href={work.webSite}>
+                                <a target='_blank'> 
                                     <BsBoxArrowUpRight  className={style.rightIconFirst}/>
                                 </a>
                             </Link>
