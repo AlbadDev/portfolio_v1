@@ -38,9 +38,9 @@ const Resume = ( { resultData } ) => {
                             <div className={style.userContact}>
                                 <ol>
                                     <li><a href="https://github.com/AlbadDev" target='_blank' className={style.gitHub}><FaGithub className={style.socialLink}/></a></li>
-                                    <li><a href="https://linkedin.com/AlbadDev" target='_blank' className={style.linkedIn}><FaLinkedinIn className={style.socialLink}/></a></li>
-                                    <li><a href="https://codepen.io/AlbadDev" target='_blank' className={style.codePen}><FaCodepen className={style.socialLink}/></a></li>
-                                    <li><a href="mailto:mamesaliou@gmail.com" className={style.mailTo}><FaRegEnvelope  className={style.socialLink}/></a></li>
+                                    <li><a href="https://www.linkedin.com/in/alieu-badara-keita-ba1a3a205/" target='_blank' className={style.linkedIn}><FaLinkedinIn className={style.socialLink}/></a></li>
+                                    <li><a href="https://codepen.io/badara" target='_blank' className={style.codePen}><FaCodepen className={style.socialLink}/></a></li>
+                                    <li><a href="mailto:alioubkeita95@gmail.com" className={style.mailTo}><FaRegEnvelope  className={style.socialLink}/></a></li>
                                 </ol>
                             </div>
                             <div className={style.downloadContainer}>
