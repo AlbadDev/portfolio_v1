@@ -16,7 +16,7 @@ const Home = () => {
                 </Grid>
                 <Grid item={true} xs={12} sm={12} lg={8} style={{display: 'flex'}} >
                     <p className={style.description}>
-                        I’m a software engineer specializing in building Front-End (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products.
+                        I&apos;m a software engineer specializing in building Front-End (and occasionally designing) exceptional digital experiences. Currently, I&apos;m focused on building accessible, human-centered products.
                         <Link href='/about' className={style.FaArrowRight}>
                             <a><svg  className={style.aboutLink} width="32" height="30" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd"><path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg></a>
                         </Link>

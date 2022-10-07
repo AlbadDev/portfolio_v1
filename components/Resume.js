@@ -72,8 +72,8 @@ const Resume = ( { resultData } ) => {
                                 <div className={style.listContainer}>
                                     <li className={style.list}><BiPhoneCall className={style.listIcon}/><a href="tel:+220 345 10 04">+220 345 10 04</a> </li>
                                     <li className={style.list}><BiEnvelope className={style.listIcon} /> <a href="mailto:mamesaliou@gmail.com"> alioubkeita95@gmail.com</a></li>
-                                    <li className={style.list}><BiMap className={style.listIcon}/><a href='https://gisgeography.com/gambia-map/' target='_blank'>Gambia</a> </li>
-                                    <li className={style.list}><BiWorld className={style.listIcon}/><a href="https://www.albaddev.io" target="_blank">www.albaddev.io</a> </li>
+                                    <li className={style.list}><BiMap className={style.listIcon}/><a href='https://gisgeography.com/gambia-map/' target='_blank' rel="noreferrer">Gambia</a> </li>
+                                    <li className={style.list}><BiWorld className={style.listIcon}/><a href="https://www.albaddev.io" target="_blank" rel="noreferrer">www.albaddev.io</a> </li>
                                 </div>
                             </div>
 
@@ -90,10 +90,10 @@ const Resume = ( { resultData } ) => {
                             <div className={style.resumeLeftContainer}>
                                 <h2 className={style.header}>TECH BOOK</h2>
                                 <div className={style.listContainer}>
-                                    <li className={style.list}><BiBook className={style.listIcon}/><a  href="https://www.pdfdrive.com/secrets-of-the-javascript-ninja-second-edition-e44753452.html " target="_blank">SECRET OF JAVASCRIPT NINJA</a></li>
-                                    <li className={style.list}><BiBook className={style.listIcon}/><a  href="https://www.pdfdrive.com/you-dont-know-js-es6-beyond-d183828940.html " target="_blank">YOU DON'T KNOW JS</a></li>
-                                    <li className={style.list}><BiBook className={style.listIcon}/><a  href="https://www.pdfdrive.com/eloquent-javascript-a-modern-introduction-to-programming-e158409266.html " target="_blank">ELOQUENT JS</a></li>
-                                    <li className={style.list}><BiBook className={style.listIcon}/><a  href="https://www.pdfdrive.com/react-in-action-e158339623.html " target="_blank">REACT IN ACTION</a></li>
+                                    <li className={style.list}><BiBook className={style.listIcon}/><a  href="https://www.pdfdrive.com/secrets-of-the-javascript-ninja-second-edition-e44753452.html " target="_blank" rel="noreferrer">SECRET OF JAVASCRIPT NINJA</a></li>
+                                    <li className={style.list}><BiBook className={style.listIcon}/><a  href="https://www.pdfdrive.com/you-dont-know-js-es6-beyond-d183828940.html " target="_blank" rel="noreferrer">YOU DON'T KNOW JS</a></li>
+                                    <li className={style.list}><BiBook className={style.listIcon}/><a  href="https://www.pdfdrive.com/eloquent-javascript-a-modern-introduction-to-programming-e158409266.html " target="_blank" rel="noreferrer">ELOQUENT JS</a></li>
+                                    <li className={style.list}><BiBook className={style.listIcon}/><a  href="https://www.pdfdrive.com/react-in-action-e158339623.html " target="_blank" rel="noreferrer">REACT IN ACTION</a></li>
                                 </div>
                             </div>
                         </article>
@@ -107,7 +107,7 @@ const Resume = ( { resultData } ) => {
                                     seeking for a full time , part time or internship role as a Junior Front-End Software Engineers
                                     in a growth-oriented company where I can use my skills
                                     to the advantage of the company while learning and growing with a diverse team that works towards 
-                                    contributing to the company’s vision and goals.
+                                    contributing to the company&apos;s vision and goals.
                                 </p>
                             </div>
 
