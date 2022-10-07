@@ -3,7 +3,6 @@ import Link from 'next/link'
 import { FaStream } from 'react-icons/fa'
 import ActiveLink from './Helper/ActiveLink'
 
-
 const Navbar = () => {
     return (
         <nav className={style.nav}>

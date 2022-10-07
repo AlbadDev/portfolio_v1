@@ -29,7 +29,7 @@ const about = () => {
                        </Grid>
                        <Grid item className={style.connectContainer}>
                            <Link href='https://www.linkedin.com/in/alieu-badara-keita-ba1a3a205/'><a target='_blank'  rel="noreferrer">Connect</a></Link>
-                           <a href = "mailto: alioubkeita95@gmail.com" target='_blank'  rel="noreferrer"><div><FaEnvelope/></div> Mail</a>
+                           <Link href = "mailto: alioubkeita95@gmail.com" ><a  target='_blank'  rel="noreferrer"><div><FaEnvelope/></div> Mail</a></Link>
                        </Grid>
                     </Grid>
 
@@ -47,7 +47,7 @@ const about = () => {
                         </p>
 
                         <Grid className={style.currentJopSeek}>
-                            <p>Currently looking for new life-changing opportunities! If you like what you <a href="/project" className={style.link}>see</a>, let's get in <a href="mailto:i.alioubkeita95@gmail.com" target="_blank" rel="noopener noreferrer" className={style.link}>touch</a>!</p>
+                            <p>Currently looking for new life-changing opportunities! If you like what you <a href="/project" className={style.link}>see</a>, let&apos;s get in <a href="mailto:i.alioubkeita95@gmail.com" target="_blank" rel="noopener noreferrer" className={style.link}>touch</a>!</p>
                         </Grid>
 
                     </Grid>
@@ -56,7 +56,7 @@ const about = () => {
 
                     <div className={style.skills_container}>
                         <div style={{display: "flex",justifyContent: "center",alignItems:"center"}}>
-                            <h4 style={{color: '#8892b0'}}> Here are a few technologies I’ve been working with recently </h4>
+                            <h4 style={{color: '#8892b0'}}> Here are a few technologies I&apos;ve been working with recently </h4>
                             <div style={{marginTop: 30}}>
                                 <FaHandPointDown style={{color: '#E1AE37',height:40}}/>
                             </div>
