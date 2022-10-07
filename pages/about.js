@@ -112,7 +112,7 @@ const about = () => {
             </section>
             <section className={style.goToWorkButton}>
            
-                <Link  href='/project'><a   rel="noreferrer" className={style.button}>Go To Work <span className={style.arrow}>&#x2192;</span></a></Link>
+                <Link  href='/project' rel="noreferrer"><a className={style.button}>Go To Work <span className={style.arrow}>&#x2192;</span></a></Link>
             </section>
         </>
     )
