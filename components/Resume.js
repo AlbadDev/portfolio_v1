@@ -30,14 +30,14 @@ const Resume = ( { resultData } ) => {
                     
                     <div className={style.myResume}>
                         <article className={style.resumeProfilContainer}>
-                            <Image className={style.profilPic} src='https://avatars.githubusercontent.com/u/45886747?s=400&u=2ce94d8ac2307558b5d5f0651302d79e9d9775b3&v=4' width='200' height='200'/>
+                            <Image className={style.profilPic} src='https://avatars.githubusercontent.com/u/45886747?s=400&u=2ce94d8ac2307558b5d5f0651302d79e9d9775b3&v=4' alt='profile' width='200' height='200'/>
                         </article>
                         <article className={style.resumesocialLink}>
                             <div className={style.userContact}>
                                 <ol>
-                                    <li><a href="https://github.com/AlbadDev" target='_blank' className={style.gitHub}><FaGithub className={style.socialLink}/></a></li>
-                                    <li><a href="https://www.linkedin.com/in/alieu-badara-keita-ba1a3a205/" target='_blank' className={style.linkedIn}><FaLinkedinIn className={style.socialLink}/></a></li>
-                                    <li><a href="https://codepen.io/badara" target='_blank' className={style.codePen}><FaCodepen className={style.socialLink}/></a></li>
+                                    <li><a href="https://github.com/AlbadDev" target='_blank' rel="noreferrer" className={style.gitHub}><FaGithub className={style.socialLink}/></a></li>
+                                    <li><a href="https://www.linkedin.com/in/alieu-badara-keita-ba1a3a205/" target='_blank' rel="noreferrer" className={style.linkedIn}><FaLinkedinIn className={style.socialLink}/></a></li>
+                                    <li><a href="https://codepen.io/badara" target='_blank' rel="noreferrer" className={style.codePen}><FaCodepen className={style.socialLink}/></a></li>
                                     <li><a href="mailto:alioubkeita95@gmail.com" className={style.mailTo}><FaRegEnvelope  className={style.socialLink}/></a></li>
                                 </ol>
                             </div>
@@ -54,16 +54,16 @@ const Resume = ( { resultData } ) => {
                             <div className={style.resumeLeftContainer}>
                                 <h2 className={style.header}>SKILLS</h2>
                                 <div className={style.listContainer}>
-                                    <li className={style.list}> <GiStarGate className={style.listIcon}/> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML#:~:text=HTML%20(HyperText%20Markup%20Language)%20is,functionality%2Fbehavior%20(JavaScript)." target='_blank'>HTML5</a></li>
-                                    <li className={style.list}> <GiStarGate  className={style.listIcon}/> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target='_blank'>CSS3</a></li>
-                                    <li className={style.list}> <GiStarGate  className={style.listIcon} /> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target='_blank'>JAVASCRIPT</a></li>
-                                    <li className={style.list}> <GiStarGate  className={style.listIcon} /> <a href="https://www.typescriptlang.org/" target='_blank'>TYPESCRIPT</a></li>
-                                    <li className={style.list}> <GiStarGate  className={style.listIcon} /> <a href="https://reactjs.org/" target='_blank'>REACT JS</a></li>
-                                    <li className={style.list}> <GiStarGate  className={style.listIcon} /> <a href="https://nextjs.org/" target='_blank'>NEXTJS</a></li>
-                                    <li className={style.list}> <GiStarGate  className={style.listIcon} /> <a href="https://mui.com/" target='_blank'>MATERIAL-UI</a></li>
-                                    <li className={style.list}> <GiStarGate  className={style.listIcon} /> <a href="https://sass-lang.com/" target='_blank'>SASS</a></li>
-                                    <li className={style.list}> <GiStarGate  className={style.listIcon} /> <a href="https://firebase.google.com/?gclsrc=aw.ds" target='_blank'>FIREBASE</a></li>
-                                    <li className={style.list}> <GiStarGate  className={style.listIcon} /> <a href="https://git-scm.com/" target='_blank'>GIT/ BASH</a></li>
+                                    <li className={style.list}> <GiStarGate className={style.listIcon}/> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML#:~:text=HTML%20(HyperText%20Markup%20Language)%20is,functionality%2Fbehavior%20(JavaScript)." target='_blank' rel="noreferrer">HTML5</a></li>
+                                    <li className={style.list}> <GiStarGate  className={style.listIcon}/> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target='_blank' rel="noreferrer">CSS3</a></li>
+                                    <li className={style.list}> <GiStarGate  className={style.listIcon} /> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target='_blank' rel="noreferrer">JAVASCRIPT</a></li>
+                                    <li className={style.list}> <GiStarGate  className={style.listIcon} /> <a href="https://www.typescriptlang.org/" target='_blank' rel="noreferrer">TYPESCRIPT</a></li>
+                                    <li className={style.list}> <GiStarGate  className={style.listIcon} /> <a href="https://reactjs.org/" target='_blank' rel="noreferrer">REACT JS</a></li>
+                                    <li className={style.list}> <GiStarGate  className={style.listIcon} /> <a href="https://nextjs.org/" target='_blank' rel="noreferrer">NEXTJS</a></li>
+                                    <li className={style.list}> <GiStarGate  className={style.listIcon} /> <a href="https://mui.com/" target='_blank' rel="noreferrer">MATERIAL-UI</a></li>
+                                    <li className={style.list}> <GiStarGate  className={style.listIcon} /> <a href="https://sass-lang.com/" target='_blank' rel="noreferrer">SASS</a></li>
+                                    <li className={style.list}> <GiStarGate  className={style.listIcon} /> <a href="https://firebase.google.com/?gclsrc=aw.ds" target='_blank' rel="noreferrer">FIREBASE</a></li>
+                                    <li className={style.list}> <GiStarGate  className={style.listIcon} /> <a href="https://git-scm.com/" target='_blank' rel="noreferrer">GIT/ BASH</a></li>
                                 </div>
                             </div>
 
