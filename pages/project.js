@@ -28,7 +28,7 @@ export default project
 
 
 export const getStaticProps = async (context) => {
-    const response = await fetch('http://localhost:3000/api/projectInfos')
+    const response = await fetch('/api/projectInfos')
     const projects = await response.json()
 
     return {

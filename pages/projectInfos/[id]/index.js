@@ -144,7 +144,7 @@ export default project
 
 export const getStaticProps = async (context) => {
     const { id } = context.params
-    const response = await fetch(`http://localhost:3000/api/projectInfos/${id}`)
+    const response = await fetch(`/api/projectInfos/${id}`)
     const project = await response.json()
 
     return {
@@ -153,7 +153,7 @@ export const getStaticProps = async (context) => {
 }
 
 export const getStaticPaths = async () => {
-    const response = await fetch(`http://localhost:3000/api/projectInfos`)
+    const response = await fetch(`/api/projectInfos`)
     const projects = await response.json()
 
     const paths = projects.map(project => (

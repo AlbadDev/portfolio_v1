@@ -7,7 +7,6 @@ import { WiDayCloudy } from 'react-icons/wi'
 import { FiDownload } from 'react-icons/fi'
 import style from '../styles/MyResume.module.scss'
 import ExperienceCard from "./Helper/ExperienceCard"
-import { Link } from "@material-ui/core"
 
 
 

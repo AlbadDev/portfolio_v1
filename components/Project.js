@@ -1,4 +1,4 @@
-import { Grid } from "@material-ui/core"
+
 import ProjectDetails from "./ProjectDetails"
 
 const Project = ({ projects }) => {
