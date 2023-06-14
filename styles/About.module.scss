@@ -158,7 +158,20 @@
             //overflow: visible;
            // z-index: 1;
            // 
-          }  
+          }
+          .border {
+            color: #bfccf7;
+            .connectContainer {
+                display: flex;
+                flex-direction: column;
+                margin-right: 5px;
+            }
+            .cennectIconContainer:hover {
+                
+                color: #14c7c7;
+            }
+          }
+          
          .profile {
             //position: absolute;
         //    mix-blend-mode:multiply;

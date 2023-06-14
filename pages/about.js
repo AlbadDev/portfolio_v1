@@ -4,7 +4,7 @@ import Image from 'next/image'
 import style from '../styles/About.module.scss'
 import profilPic from '../public/image/profile/profil_image.jpg'
 import Social from '../components/Social'
-import { FaHandSpock, FaHandPointDown, FaEnvelope } from 'react-icons/fa'
+import { FaHandSpock, FaHandPointDown, FaEnvelope, FaLinkedinIn , FaGithub} from 'react-icons/fa'
 import {MdOutlinePlayArrow } from 'react-icons/md'
 import Link from "next/link"
 import Reveal from "../utils/Reveal"
@@ -46,7 +46,7 @@ const about = () => {
                         <div className={style.hello1}>
 
                             <h4 className={style.salutation}><Reveal>Hello! {<FaHandSpock style={{ color: '#E1AE37' }} />}, I &apos; m </Reveal></h4>
-                            <h2 className={style.name}><Reveal>Alieu Badara Keita</Reveal></h2>
+                            <h2 className={style.name}><Reveal>Alieu Badara </Reveal></h2>
                             <p>
                                <Reveal> <span className={style.firstLetter}>I</span> enjoy creating things that live on the internet.
                                 My interest in web development started back in 2018 when I decided to try leaning programing stuff — editing custom button taught me a lot about HTML and CSS!
@@ -59,10 +59,17 @@ const about = () => {
 
                         </div>
                         <div style={{ height: "300px", border: '1px solid #14c7c7' }} className={style.hello2}>
-                             <Grid item xs={12} sm={12} className={style.imageContainer}>
+                            
+                            <Grid item xs={12} sm={12} className={style.imageContainer}>
                                <Image src={profilPic} alt='Albad_profile' height={300} width={250} className={style.profile} sm={6} lg={12} />
                             </Grid>
-                            <div className={style.border}>.</div>
+                            <div className={style.border}>
+                                <Grid item className={style.connectContainer}>
+                                    <Link href='https://www.linkedin.com/in/alieu-badara-keita-ba1a3a205/'target='_blank'><div className={style.cennectIconContainer}><FaLinkedinIn /></div></Link>
+                                    <Link href = "mailto: alioubkeita95@gmail.com" ><div className={style.cennectIconContainer}><FaEnvelope/></div></Link>
+                                    <Link href='https://github.com/AlbadDev'target='_blank'><div className={style.cennectIconContainer}><FaGithub /></div></Link>
+                                </Grid>
+                            </div>
                         </div>
                         {/* <div></div> */}
 
