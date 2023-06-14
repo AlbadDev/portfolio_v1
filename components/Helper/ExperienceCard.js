@@ -31,8 +31,8 @@ const ExperienceCard = ({ work }) => {
                     ))}
                 </div>
                 <div className={style.workGithub}>
-                    <Link href={work.github}>
-                        <a target='_blank'><FaGithub className={style.githubIcon}/></a>
+                    <Link href={work.github} target='_blank'>
+                        <FaGithub className={style.githubIcon}/>
                     </Link>
                     
                     

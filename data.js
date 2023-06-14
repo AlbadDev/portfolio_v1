@@ -6,7 +6,7 @@ export const projectInfo = [
       title: 'Pokedex',
       github: `https://github.com/AlbadDev/My-Pokemon-App`,
       webSite:`https://pokedex-17cda.web.app`,
-      description: 'Pokedex is a simple CRUD pokemon web application with beautiful UI design.  This App allows user to create, update, delete or search an specific pokemon . Pokedex is build using the pokemon data Api.',
+      description: 'Pokedex is a simple CRUD pokemon web application with beautiful UI design.  This App allows user to create, update, delete or search an specific pokemon . Pokedex is build using the pokemon data API.',
       material: ['React', 'TypeScript', 'MaterialUi', 'Firebase'],
       mvp: ['Fisrt of all the user need to login with our default username and password : " pikachu " ',
             'Data get displayed to the home page where user can see 12 pokemons.',
@@ -18,11 +18,13 @@ export const projectInfo = [
             'User can edit a pokemon, set new value for it like : name, score, genre, damage.',
             'Posiblity to delete an specific pokemon'
           ],
-      inDeep: ['For a better page navigation, I used react-router to navigate between page.',
-              'To take 12 pokemons persistant in our app I used json-server as the one of best tool to handle data persistance.',
+      inDeep: ['Firebase Authentication API',
+        'For a better page navigation, I used react-router .',
+              'To take 12 pokemons persistant in our app I used json-server to handle data persistance.',
               'For the pokemon data I use the pokemon data API.',
               'To get the data asynchronously I used axios to fetch the data.',
-              'And I used Hooks for an easy data management.'
+              'And I used Hooks for easy state data management.',
+              'Material-UI to simplfied writing plain css'   
             ],
       mobileScreen: 'https://raw.githubusercontent.com/AlbadDev/My-Pokemon-App/master/ab_login_moto.PNG',
       tabScreen: 'https://raw.githubusercontent.com/AlbadDev/portfolio_v1/master/public/image/reposImages/pokedex/homePage.PNG',

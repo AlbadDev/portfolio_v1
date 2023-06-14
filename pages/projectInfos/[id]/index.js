@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Head from 'next/head'
 import { FaGithub, FaCogs, FaLaptop, FaPalette, FaWrench,FaMedapps, FaStaylinked} from 'react-icons/fa'
 import {BsBoxArrowUpRight, BsInfoCircle, BsCheck, BsCheckCircle} from 'react-icons/bs'
+import Reveal from '../../../utils/Reveal'
 
 
 // const myImageLoader = () => {
@@ -27,24 +28,24 @@ const project = ({project}) => {
         <section className={style.section}>
             <div className={style.link}>
                 <div className={style.websiteLink}>
-                    <span className={style.visiteText}>Visite website</span> <Link href='/'><a className={style.visiteLink}><BsBoxArrowUpRight   className={style.icon}/> </a></Link>
+                    <span className={style.visiteText}>Visite website</span> <Link href='/'className={style.visiteLink}><BsBoxArrowUpRight   className={style.icon}/> </Link>
                 </div>
                 <div className={style.websiteLink}>
-                    Check GitHub<Link href={project.github}><a target='_blank'><FaGithub  className={style.icon}/> </a></Link>
+                    Check GitHub<Link href={project.github}target='_blank'><FaGithub  className={style.icon}/> </Link>
                 </div>
             </div>
             <header className={style.header}>
                 <div className={style.imageContainer}>
                     <div className={style.firstContainer}>
-                        {project.mobileScreen && <Image className={style.firstImage}  src={project.mobileScreen} width= '150' height='300' alt='pokedex_home' />}
+                        {project.mobileScreen && <Reveal><Image className={style.firstImage}  src={project.mobileScreen} width= '150' height='300' alt='pokedex_home' /></Reveal> }
                     </div>
                     <div className={style.secondContainer}>
-                        {project.tabScreen && <Image className={style.secondImage}  src={project.tabScreen} width= '300' height='300' alt='pokedex_home' />}
+                        {project.tabScreen && <Reveal> <Image className={style.secondImage}  src={project.tabScreen} width= '300' height='300' alt='pokedex_home' /></Reveal>}
                     </div>
                 </div>
 
                 <Grid  container>
-                    <p><BsInfoCircle className={style.infoIcon}/> {project.description}</p>
+                    <p><BsInfoCircle className={style.infoIcon}/><Reveal> {project.description}</Reveal></p>
                 </Grid>
 
                 <section className={style.childContainer}>
@@ -52,7 +53,7 @@ const project = ({project}) => {
                     <article>
                        <Grid item xs={12} className={style.mvpContainer}> 
                             <ul>
-                                {project.mvp.map(mvp =><li key={project.id}><span><BsCheckCircle style={{color: 'cyan'}}/></span> {mvp}</li> )}
+                                {project.mvp.map(mvp =><li key={project.id}><span></span><Reveal><BsCheckCircle style={{color: 'cyan'}}/>{mvp}</Reveal> </li> )}
                             </ul>
                        </Grid>
                        <div className={style.imageContainer}>
@@ -80,14 +81,14 @@ const project = ({project}) => {
 
                 <section className={style.childContainer}>
                     <div className={style.title}><h3><FaCogs /> Stack :</h3></div>
-                    <p>There are a the list of technologies and colors palettes I used to build and design <span style={{color: 'cyan',marginLeft: 5}}> {project.title}</span>.</p>
+                    <p><Reveal > There are a the list of technologies and colors palettes I used to build and design <span style={{color: 'cyan',marginLeft: 5}}> {project.title}</span>.</Reveal></p>
                     <article className={style.article}>
                         <Grid item xs={12} sm={6} lg={4} className={style.stackChild} style={{marginBottom: 20}}>
                             <h4><FaWrench /> Tecnologies :</h4>
                            <div className={style.tecnoContainer}>
                                 <ul>
                                     {project.material.map(tecno =>
-                                      <li key={tecno.toString()} ><div><Image className={style.tecnoIcon}  src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${tecno.toLowerCase()}/${tecno.toLowerCase()}-original.svg`} alt={tecno.toString()} width='30px' height='30px' marginright='10px'/></div> <span>{tecno}</span></li> 
+                                      <li key={tecno.toString()} ><div><Reveal><Image className={style.tecnoIcon}  src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${tecno.toLowerCase()}/${tecno.toLowerCase()}-original.svg`} alt={tecno.toString()} width={30} height={30} marginright='10px'/></Reveal></div> <span><Reveal>{tecno}</Reveal></span></li> 
                                     )}
                                 </ul>
                            </div>
@@ -97,7 +98,7 @@ const project = ({project}) => {
                             <div className={style.tecnoContainer}>
                                 <ul>
                                     {project.colors.map(color => 
-                                        <li key={color.toString()}><div className={style.circle} style={{background:color}}></div> {color}</li>
+                                        <li key={color.toString()}><div className={style.circle} style={{background:color}}></div><Reveal>{color}</Reveal> </li>
                                     )}
                                 </ul>
                             </div>
@@ -108,7 +109,7 @@ const project = ({project}) => {
                             <h4><span className={style.faCat}><FaMedapps style={{color:'yellow'}}/></span> In Deep :</h4>
                             <div>
                                 <ul>
-                                    {project.inDeep.map(deep => <li key={project.id}><span><BsCheck /></span> {deep}</li>)}
+                                    {project.inDeep.map(deep => <li key={project.id}><Reveal><span><BsCheck /></span> {deep}</Reveal></li>)}
                                 </ul>
                             </div>
                         </Grid>
@@ -117,14 +118,14 @@ const project = ({project}) => {
                     <Grid className={style.bottomNav}>
                         <section className={style.container}>
                             <div className={style.firstListLink}>
-                                <Link href='/project'><a><span style={{color:'#4feb34'}}>&#8592;</span>  Back to projects</a></Link>
+                                <Link href='/project'><span style={{color:'#4feb34'}}>&#8592;</span>  Back to projects</Link>
                             </div>
                             <section className={style.secondListLink}> 
                                 <div>
-                                    <Link href='/'><a><BsBoxArrowUpRight style={{color:'#ebdf34'}}/> Visite website</a></Link>
+                                    <Link href='/'><BsBoxArrowUpRight style={{color:'#ebdf34'}}/> Visite website</Link>
                                 </div>
                                 <div>
-                                    <Link href={project.github}><a target='_blank'><FaGithub style={{color:'#346beb'}}/> Check GitHub</a></Link>
+                                    <Link href={project.github}target='_blank'><FaGithub style={{color:'#346beb'}}/> Check GitHub</Link>
                                 </div>
                             </section>
                        </section>
@@ -144,7 +145,7 @@ export default project
 
 export const getStaticProps = async (context) => {
     const { id } = context.params
-    const response = await fetch(`/api/projectInfos/${id}`)
+    const response = await fetch(`http://localhost:3000/api/projectInfos/${id}`)
     const project = await response.json()
 
     return {
@@ -153,7 +154,7 @@ export const getStaticProps = async (context) => {
 }
 
 export const getStaticPaths = async () => {
-    const response = await fetch(`/api/projectInfos`)
+    const response = await fetch(`http://localhost:3000/api/projectInfos`)
     const projects = await response.json()
 
     const paths = projects.map(project => (

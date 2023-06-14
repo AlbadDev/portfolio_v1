@@ -28,8 +28,8 @@ const about = () => {
                             <Image src={profilPic} alt='Albad_profile' height={250} width={250} className={style.profile} sm={6} lg={12}/>
                        </Grid>
                        <Grid item className={style.connectContainer}>
-                           <Link href='https://www.linkedin.com/in/alieu-badara-keita-ba1a3a205/'><a target='_blank'  rel="noreferrer">Connect</a></Link>
-                           <Link href = "mailto: alioubkeita95@gmail.com" ><a  target='_blank'  rel="noreferrer"><div><FaEnvelope/></div> Mail</a></Link>
+                           <Link href='https://www.linkedin.com/in/alieu-badara-keita-ba1a3a205/'target='_blank'>Connect</Link>
+                           <Link href = "mailto: alioubkeita95@gmail.com" target='_blank' ><div><FaEnvelope/></div> Mail</Link>
                        </Grid>
                     </Grid>
 
@@ -112,7 +112,7 @@ const about = () => {
             </section>
             <section className={style.goToWorkButton}>
            
-                <Link  href='/project' rel="noreferrer"><a className={style.button}>Go To Work <span className={style.arrow}>&#x2192;</span></a></Link>
+                <Link  href='/project' rel="noreferrer"className={style.button}>Go To Work <span className={style.arrow}>&#x2192;</span></Link>
             </section>
         </>
     )

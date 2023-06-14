@@ -1,3 +1,6 @@
+'use client'
+import { usePathname } from 'next/navigation'
+import dynamic from 'next/dynamic'
 import { withRouter } from 'next/router'
 import { useEffect, useRef } from 'react'
 
@@ -5,13 +8,14 @@ import { useEffect, useRef } from 'react'
 
 const ActiveLink = ({ router, href, children,exact }) => {
     let myRef = useRef(href)
+    const pathname = usePathname()
 // nextjs prefecth router attribute allow us to prefeth the state of router when page load
     useEffect( () => {
-    (function prefetchPage () {
-        if(typeof window !== 'underfined') {
-            router.prefetch(router.pathname)
-        }
-    })()
+    // (function prefetchPage () {
+    //     if(typeof window !== 'underfined') {
+    //         router.prefetch(pathname)
+    //     }
+    // })()
    })
 
 
@@ -28,7 +32,7 @@ const ActiveLink = ({ router, href, children,exact }) => {
     }
    })
 
-    const isCurrentPath = router.pathname === href || router.asPath === href ;
+    const isCurrentPath = pathname === href  ;
 
 
 
@@ -45,4 +49,5 @@ const ActiveLink = ({ router, href, children,exact }) => {
     )
 }
 
-export default withRouter(ActiveLink)
+export default dynamic (() => Promise.resolve(ActiveLink), {ssr: false})
+//export default withRouter(ActiveLink)

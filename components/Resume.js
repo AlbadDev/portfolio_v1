@@ -41,7 +41,7 @@ const Resume = ( { resultData } ) => {
                                 </ol>
                             </div>
                             <div className={style.downloadContainer}>
-                            <h4 className={style.text}>Download White Resume</h4>
+                            <h4 className={style.text}>Download Pdf Resume</h4>
                                 <a href='../public/albadResume.pdf' className={style.download} download><FiDownload className={style.socialLink}/></a>
                             </div>
                         </article>  
@@ -125,8 +125,8 @@ const Resume = ( { resultData } ) => {
 
                                 <article className={style.resumeEducationContainer}>
                                     <header className={style.resumeHeadline}><h1>EDUCATION</h1></header>
-                                    <h2>Self-taugth: </h2>
-                                    <p>Object Oriented Programming, Functional Programming, Data Structures, Algorithms with problem solving mind set and try developing soft skills to get better day to day. </p>
+                                    {/* <h2>Self-taugth: </h2> */}
+                                    <p>Object Oriented Programming, Functional Programming, Data Structures, with problem solving mind set and try developing soft skills to get better. </p>
                                 </article>
 
                             </div>

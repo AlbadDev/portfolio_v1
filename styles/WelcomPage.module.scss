@@ -30,6 +30,11 @@
             font-size: clamp(20px, 8vw, 40px);
             line-height: 1.1;
             font-weight: bold;
+           
+        }
+        .name {
+            width: 70%;
+            
         }
         h3 { 
             color:  #14c7c7;
@@ -39,6 +44,7 @@
             font-weight: 400;
             letter-spacing: 2px;
             margin-bottom: 50px;
+            width: 60%;
         }
         p {
             padding-left: 20px;
@@ -65,6 +71,30 @@
         .section {
             p {
                 font-size: 16px;
+            }
+            .name {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        .section {
+            p {
+                font-size: 16px;
+            }
+            h3 {
+                width: 90%;
+            }
+            .name {
+                width: 100%;
+            }
+            .description {
+                font-size: 20px;
+                width: 90%;
+                background-color: none;
             }
         }
     }
