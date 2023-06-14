@@ -13,36 +13,44 @@
         display: inline;
 
         li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             margin: 25px;
-            color: #14c7c7;
+            color: #94a2b9;
             font-size: 26px;
             .icon {
             width: 70;
             height:90;
             cursor: 'pointer'
+           
             }
-            .gitHub {
-                color: rgba(110, 17, 216, 0.534);
+            // .gitHub {
+            //     color: rgba(110, 17, 216, 0.534);
                 
-            }
-            .linkedIn {
-                color: rgba(28, 28, 170, 0.678);
-            }
-            .linkedIn:hover {
-                color: rgb(28, 28, 170);
-            }
-            .gitHub:hover {
-                color: rgb(25, 25, 221);
+            // }
+            // .linkedIn {
+            //     color: rgba(28, 28, 170, 0.678);
+            // }
+            // .linkedIn:hover {
+            //     color: rgb(28, 28, 170);
+            // }
+            // .gitHub:hover {
+            //     color: rgb(25, 25, 221);
                 
-            }
-            .codePen {
-                color: rgba(255, 255, 255, 0.514);
-            }
-            .codePen:hover {
-                color: #fff;
+            // }
+            // .codePen {
+            //     color: rgba(255, 255, 255, 0.514);
+            // }
+            // .codePen:hover {
+            //     color: #fff;
                 
-            }
+            // }
         }
+        li:hover {
+                color: #14c7c7;
+                
+            }
         
     }
     

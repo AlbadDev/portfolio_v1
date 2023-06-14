@@ -1,7 +1,7 @@
 .container {
     display: flex;
     justify-content: space-between;
-    margin-top: -50px;
+    margin-top: -20px;
     .section {
         display: flex;
         flex-direction: column;
@@ -95,6 +95,65 @@
                 font-size: 20px;
                 width: 90%;
                 background-color: none;
+            }
+        }
+    }
+}
+
+@media (width: 1024px) {
+    .container {
+        .section {
+            p {
+                font-size: 14px;
+            }
+            h3 {
+                width: 70%;
+            }
+            .intro {
+                width: 90%;
+                font-size: clamp(20px, 6vw, 30px);
+                line-height: 1;
+                
+            }
+            .name {
+                width: 100%;
+                font-size: clamp(20px, 8vw, 40px);
+            
+            }
+            .description {
+                font-size: 20px;
+                width: 70%;
+                background-color: none;
+                margin-left: 60px;
+            }
+        }
+    }
+}
+@media (min-width: 1899px) {
+    .container {
+        .section {
+            p {
+                font-size: 16px;
+            }
+            h3 {
+                width: 70%;
+            }
+            .intro {
+                width: 70%;
+                font-size: clamp(40px, 8vw, 80px);
+                line-height: 1;
+                
+            }
+            .name {
+                width: 100%;
+                font-size: clamp(40px, 8vw, 80px);
+            
+            }
+            .description {
+                font-size: 40px;
+                width: 70%;
+                background-color: none;
+                margin-left: 60px;
             }
         }
     }
