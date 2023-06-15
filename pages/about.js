@@ -81,20 +81,21 @@ const about = () => {
                     </div>
 
                     <Grid className={style.currentJopSeek}>
-                        <p><Reveal>Currently looking for new life-changing opportunities! If you like what you</Reveal> <a href="/project" className={style.link}>see</a>, let&apos;s get in <a href="mailto:i.alioubkeita95@gmail.com" target="_blank" rel="noopener noreferrer" className={style.link}>touch</a>!</p>
+                        <p><Reveal>Currently looking for new life-changing opportunities! If you like what you <a href="/project" className={style.link}>see</a>, let&apos;s get in <a href="mailto:i.alioubkeita95@gmail.com" target="_blank" rel="noopener noreferrer" className={style.link}>touch</a>!</Reveal></p>
                     </Grid>
 
 
                     <div className={style.skills_container}>
+                        
+
+                        <div>
+                            <h3 style={{ color: '#14c7c7' }}>TECHNICAL SKILLS</h3>
+                        </div>
                         <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                             <h4 style={{ color: '#8892b0' }}> <Reveal>Here are a few technologies I&apos;ve been working with recently </Reveal></h4>
                             <div style={{ marginTop: 30 }}>
                                <Reveal> <FaHandPointDown style={{ color: '#E1AE37', height: 40 }} /></Reveal>
                             </div>
-                        </div>
-
-                        <div>
-                            <h3 style={{ color: '#14c7c7' }}>TECHNICAL SKILLS</h3>
                         </div>
                         <section className={style.skills}>
                             <div>
