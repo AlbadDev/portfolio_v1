@@ -129,8 +129,13 @@
            // border: 2px solid yellow;
            
             //z-index: 1;
-
-            h2 {
+            .nameContainer {
+                display: flex;
+                flex-wrap: wrap;
+                //justify-content: center;
+                align-items: center;
+            }
+            h1 {
                 color: #c1cae5;
             }
 
@@ -200,7 +205,7 @@
             font-family: courier;
         }
 
-        
+       
 
     }
 
