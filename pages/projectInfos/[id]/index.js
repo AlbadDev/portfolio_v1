@@ -31,7 +31,7 @@ const project = ({project}) => {
                     <span className={style.visiteText}>Visite website</span> <Link href='/'className={style.visiteLink}><BsBoxArrowUpRight   className={style.icon}/> </Link>
                 </div>
                 <div className={style.websiteLink}>
-                    Check GitHub<Link href={project.github}target='_blank'><FaGithub  className={style.icon}/> </Link>
+                    Codebase<Link href={project.github}target='_blank'><FaGithub  className={style.icon}/> </Link>
                 </div>
             </div>
             <header className={style.header}>
@@ -125,7 +125,7 @@ const project = ({project}) => {
                                     <Link href='/'><BsBoxArrowUpRight style={{color:'#ebdf34'}}/> Visite website</Link>
                                 </div>
                                 <div>
-                                    <Link href={project.github}target='_blank'><FaGithub style={{color:'#346beb'}}/> Check GitHub</Link>
+                                    <Link href={project.github}target='_blank'><FaGithub style={{color:'#346beb'}}/> Codebase</Link>
                                 </div>
                             </section>
                        </section>

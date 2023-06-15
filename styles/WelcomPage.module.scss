@@ -2,15 +2,28 @@
     display: flex;
     justify-content: space-between;
     margin-top: -20px;
+
     .section {
         display: flex;
         flex-direction: column;
         justify-content: center;
         flex-wrap: wrap;
         align-items: center;
-        margin: auto 10px ;
+        margin: auto 10px;
         margin-top: -10px;
         padding: 10px;
+
+
+
+        #name {
+            width: 100%;
+            font-size: clamp(30px, 8vw, 60px);
+            //color: #14c7c7;
+
+        }
+
+
+
         .description {
             .aboutLink {
                 display: inline-flex;
@@ -19,25 +32,29 @@
                 margin-left: 10px;
                 height: 20px;
             }
+
             .aboutLink:hover {
                 margin-left: 20px;
             }
-             
+
         }
+
         h2 {
             margin-top: -10px;
             color: #ccd6f6;
             font-size: clamp(20px, 8vw, 40px);
             line-height: 1.1;
             font-weight: bold;
-           
+
         }
-        .name {
-            width: 70%;
-            
-        }
-        h3 { 
-            color:  #14c7c7;
+
+        // .name {
+        //     width: 70%;
+
+        // }
+        h3 {
+            //color: #ccd6f6;
+            color: #14c7c7;
             font-family: 'courier';
             font-weight: 400;
             font-size: 20px;
@@ -46,6 +63,7 @@
             margin-bottom: 50px;
             width: 60%;
         }
+
         p {
             padding-left: 20px;
             font-size: 26px;
@@ -53,15 +71,15 @@
             color: #8892b0;
             border-left: 5px solid #14c7c7;
         }
-        
+
         .intro {
-            color:  #8892b0;
+            color: #8892b0;
             font-weight: bold;
             line-height: 50px;
         }
 
-        
-        
+
+
     }
 
 }
@@ -72,6 +90,7 @@
             p {
                 font-size: 16px;
             }
+
             .name {
                 width: 100%;
             }
@@ -85,12 +104,15 @@
             p {
                 font-size: 16px;
             }
+
             h3 {
                 width: 90%;
             }
+
             .name {
                 width: 100%;
             }
+
             .description {
                 font-size: 20px;
                 width: 90%;
@@ -106,20 +128,19 @@
             p {
                 font-size: 14px;
             }
+
             h3 {
                 width: 70%;
             }
+
             .intro {
                 width: 90%;
                 font-size: clamp(20px, 6vw, 30px);
                 line-height: 1;
-                
+
             }
-            .name {
-                width: 100%;
-                font-size: clamp(20px, 8vw, 40px);
-            
-            }
+
+
             .description {
                 font-size: 20px;
                 width: 70%;
@@ -129,32 +150,38 @@
         }
     }
 }
+
 @media (min-width: 1899px) {
     .container {
         .section {
             p {
                 font-size: 16px;
             }
+
             h3 {
                 width: 70%;
             }
+
             .intro {
                 width: 70%;
                 font-size: clamp(40px, 8vw, 80px);
                 line-height: 1;
-                
+
             }
-            .name {
+
+            #name {
                 width: 100%;
                 font-size: clamp(40px, 8vw, 80px);
-            
+
             }
+
             .description {
                 font-size: 40px;
                 width: 70%;
                 background-color: none;
-                margin-left: 60px;
+                //margin-left: 60px;
             }
+
         }
     }
 }

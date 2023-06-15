@@ -129,8 +129,13 @@
            // border: 2px solid yellow;
            
             //z-index: 1;
-
-            h2 {
+            .nameContainer {
+                display: flex;
+                flex-wrap: wrap;
+                //justify-content: center;
+                align-items: center;
+            }
+            h1 {
                 color: #c1cae5;
             }
 
@@ -140,6 +145,7 @@
             .name {
                 width: 400px;
             }
+            
         }
         .hello2 {
             display: flex;
@@ -200,31 +206,34 @@
             font-family: courier;
         }
 
-        
+       
 
     }
 
     .currentJopSeek {
         display: flex;
-        justify-content: center;
+       // justify-content: center;
         align-items: center;
         width: 100%;
         margin: 20px 0px ;
         // border-top: 1px solid gray;
         // border-bottom: 1px solid gray;
 
-        p {
-            color:#bfccf7;
+        span {
+            color: #c1cae5;
 
             .link {
                 font-family: 'Courier New', Courier, monospace;
                 font-weight: bold;
                 color: #14c7c7;
+                
             }
             .link:hover {
                 text-decoration: underline;
             }
         }
+
+       
     }
 
 
@@ -241,6 +250,7 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+       
             div {
                 margin-right: 15px;
             }

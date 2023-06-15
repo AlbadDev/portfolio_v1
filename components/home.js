@@ -1,9 +1,18 @@
 import Link from 'next/link'
+import { Kalam } from 'next/font/google'
 import style from '../styles/WelcomPage.module.scss'
 import Social from '../components/Social'
 import  Grid from '@material-ui/core/Grid'
 import {FaArrowRight} from 'react-icons/fa'
 import Reveal from '../utils/Reveal'
+
+
+const kalam = Kalam({
+    weight: '700',
+    subsets: ['latin']
+  })
+
+
 
 const Home = () => {
    
@@ -15,7 +24,7 @@ const Home = () => {
                         <h3 ><Reveal> Hello World, my name is</Reveal></h3> 
                     
                     
-                        <h2 className={style.name}><Reveal>Alieu Badara Keita.</Reveal></h2>
+                        <h2 className={kalam.className} id={style.name}><Reveal>Alieu Badara Keita.</Reveal></h2>
                     
                     
                         <h2 className={style.intro}><Reveal>My work is to build userfull things for the web. </Reveal></h2>

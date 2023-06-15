@@ -1,4 +1,5 @@
 import { Grid } from "@material-ui/core"
+import { Kalam } from 'next/font/google'
 import Head from 'next/head'
 import Image from 'next/image'
 import style from '../styles/About.module.scss'
@@ -8,6 +9,15 @@ import { FaHandSpock, FaHandPointDown, FaEnvelope, FaLinkedinIn , FaGithub} from
 import {MdOutlinePlayArrow } from 'react-icons/md'
 import Link from "next/link"
 import Reveal from "../utils/Reveal"
+
+
+const kalam = Kalam({
+    weight: '700',
+    subsets: ['latin']
+  })
+
+
+
 
 const about = () => {
 
@@ -39,14 +49,16 @@ const about = () => {
                            <Link href='https://www.linkedin.com/in/alieu-badara-keita-ba1a3a205/'target='_blank'>Connect</Link>
                            <Link href = "mailto: alioubkeita95@gmail.com" target='_blank' ><div><FaEnvelope/></div> Mail</Link>
                        </Grid> */}
-                    {/* </div>item={true} xs={12} sm={12} lg={8}     item={true} xs={12} sm={12} md={8} lg={8}*/}
+                    {/* </div>item={true} xs={12} sm={12} lg={8} style.name    item={true} xs={12} sm={12} md={8} lg={8}*/}
 
                     <div className={style.personal_info} >
 
                         <div className={style.hello1}>
 
-                            <h4 className={style.salutation}><Reveal>Hello! {<FaHandSpock style={{ color: '#E1AE37' }} />}, I &apos; m </Reveal></h4>
-                            <h2 className={style.name}><Reveal>Alieu Badara </Reveal></h2>
+                            <div className={style.nameContainer}>
+                                <h4 className={style.salutation}><Reveal>Hello! {<FaHandSpock style={{ color: '#E1AE37' }} />}, I &apos; m </Reveal></h4>
+                                <h1 className={kalam.className} id={style.name}><Reveal>Alieu Badara </Reveal></h1>
+                            </div>
                             <p>
                                <Reveal> <span className={style.firstLetter}>I</span> enjoy creating things that live on the internet.
                                 My interest in web development started back in 2018 when I decided to try leaning programing stuff — editing custom button taught me a lot about HTML and CSS!
@@ -55,7 +67,11 @@ const about = () => {
                                 <span style={{ background: 'yellow', color: "black" }}><br /> I&#39;m specializing in building  front-end web application,</span> Able to create clean and functional full-stark  web application as well as professional branding and hight quality user experience.
                                 <span style={{ background: 'yellow', color: "black" }}>My goal is to always build applications that are scalable and efficient under the hood while providing engaging, pixel-perfect user experiences.</span>
                                 When I&#39;m not in front of a computer screen, I&#39;m probably out enjoying the view, playing pool table, reading books or crossing off another item on my bucket list.</Reveal>
+                               
                             </p>
+                            <Grid className={style.currentJopSeek}>
+                                <span className={style.jopSick}><Reveal>Currently looking for new life-changing opportunities! If you like what you <a href="/project" className={style.link}>see</a>, let&apos;s get in <a href="mailto:i.alioubkeita95@gmail.com" target="_blank" rel="noopener noreferrer" className={style.link}>touch</a>!</Reveal></span>
+                            </Grid>
 
                         </div>
                         <div style={{ height: "300px", border: '1px solid #14c7c7' }} className={style.hello2}>
@@ -80,9 +96,7 @@ const about = () => {
 
                     </div>
 
-                    <Grid className={style.currentJopSeek}>
-                        <p><Reveal>Currently looking for new life-changing opportunities! If you like what you <a href="/project" className={style.link}>see</a>, let&apos;s get in <a href="mailto:i.alioubkeita95@gmail.com" target="_blank" rel="noopener noreferrer" className={style.link}>touch</a>!</Reveal></p>
-                    </Grid>
+                   
 
 
                     <div className={style.skills_container}>
@@ -91,12 +105,15 @@ const about = () => {
                         <div>
                             <h3 style={{ color: '#14c7c7' }}>TECHNICAL SKILLS</h3>
                         </div>
+
+                        
                         <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                             <h4 style={{ color: '#8892b0' }}> <Reveal>Here are a few technologies I&apos;ve been working with recently </Reveal></h4>
                             <div style={{ marginTop: 30 }}>
-                               <Reveal> <FaHandPointDown style={{ color: '#E1AE37', height: 40 }} /></Reveal>
+                                <Reveal> <FaHandPointDown style={{ color: '#E1AE37', height: 40 }} /></Reveal>
                             </div>
                         </div>
+
                         <section className={style.skills}>
                             <div>
                                 <h5>LANGUAGES</h5>
