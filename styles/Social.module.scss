@@ -29,9 +29,12 @@
             //     color: rgba(110, 17, 216, 0.534);
                 
             // }
-            // .linkedIn {
-            //     color: rgba(28, 28, 170, 0.678);
-            // }
+            .linkedIn {
+                color: #14c7c7;
+            }
+            .linkedIn:hover {
+                color: #14c7c73b;
+            }
             // .linkedIn:hover {
             //     color: rgb(28, 28, 170);
             // }
@@ -48,7 +51,8 @@
             // }
         }
         li:hover {
-                color: #14c7c7;
+              //  color: #14c7c7;
+              color: #14c7c73b;
                 
             }
         

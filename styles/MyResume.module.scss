@@ -32,12 +32,13 @@
     height: 100%;
     text-align: center;
     padding: 50px;
-    background-color: rgba(127, 255, 212, 0.123);
+   // background-color: rgba(127, 255, 212, 0.123);
 
     .resumeHead {
         display: flex;
         flex-direction: column;
-        background-color: #11acacb6;
+        background-color: #11acac1c;
+        //#11acacb6;
         //background-color: #4190b7;
         border: 3px solid  rgba(255, 255, 0, 0.568);
         border-bottom: none ;
@@ -209,7 +210,7 @@
 
     .resumeBody {
         display: flex;
-        background-color: #11acac80;
+        background-color: #11acac11;
         border: 3px solid  rgba(255, 255, 0, 0.568);
         border-top: none;
         width: 100%;
@@ -220,8 +221,8 @@
             flex-direction: column;
             padding-top: 30px;
             align-items: flex-start;
-            //background-color: cadetblue;
-            background-color: #11acacb6;
+            //background-color: cadetblue;11acacb6
+            background-color: #11acac21;
             width: 25%;
             height: 100%;
             //padding-top: 30px;
@@ -340,7 +341,8 @@
                         height: 40px;
                         padding-left: 10px;
                         background-color: #14c7c7;
-                        color: #e4e9fa;
+                        color: #041F20;
+                        //#e4e9fa;
                         border-top-right-radius: 60px;
                     
                     }

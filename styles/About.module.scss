@@ -155,15 +155,17 @@
             max-width: 250px;
             margin-left: 30px;
             border-radius: 5px;
-            //  background-color: #14c7c72a;
+        
           .imageContainer {
-           // position: relative;
+            
            //mix-blend-mode:multiply;
           //background-color: #14c7c72a;
             width: 100%;
-            //overflow: visible;
-           // z-index: 1;
-           // 
+           // overflow: visible;
+           .profile {
+            z-index: 1;
+           }
+          
           }
           .border {
             color: #bfccf7;

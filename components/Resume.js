@@ -1,5 +1,6 @@
 import Head from "next/head"
 import Image from "next/image"
+import { Kalam } from 'next/font/google'
 import { GiStarGate, GiEightBall } from 'react-icons/gi'
 import { BiPhoneCall, BiEnvelope, BiMap, BiWorld, BiBook } from 'react-icons/bi'
 import { FaPlaneDeparture, FaGithub, FaCodepen, FaLinkedinIn, FaRegEnvelope,FaEdit, FaMedapps } from 'react-icons/fa'
@@ -8,6 +9,10 @@ import { FiDownload } from 'react-icons/fi'
 import style from '../styles/MyResume.module.scss'
 import ExperienceCard from "./Helper/ExperienceCard"
 
+const kalam = Kalam({
+    weight: '700',
+    subsets: ['latin']
+  })
 
 
 const Resume = ( { resultData } ) => {
@@ -23,7 +28,7 @@ const Resume = ( { resultData } ) => {
                 <section className={style.resumeContainer}>
                     
                     <div className={style.resumeHead}>
-                            <h1><span className={style.firstName}>Alioune</span> Badara</h1>
+                            <h1 className={kalam.className}><span className={style.firstName}>Alioune</span> Badara</h1>
                             <p className={style.title}>Front-End Software Engineer</p>
                     </div>
                     
@@ -41,7 +46,7 @@ const Resume = ( { resultData } ) => {
                                 </ol>
                             </div>
                             <div className={style.downloadContainer}>
-                            <h4 className={style.text}>Download Pdf Resume</h4>
+                            <h4 className={style.text}>Download white Resume</h4>
                                 <a href='../public/albadResume.pdf' className={style.download} download><FiDownload className={style.socialLink}/></a>
                             </div>
                         </article>  

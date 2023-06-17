@@ -9,6 +9,7 @@ import { FaHandSpock, FaHandPointDown, FaEnvelope, FaLinkedinIn , FaGithub} from
 import {MdOutlinePlayArrow } from 'react-icons/md'
 import Link from "next/link"
 import Reveal from "../utils/Reveal"
+import FirstLoad from "../utils/FirstLoad"
 
 
 const kalam = Kalam({
@@ -34,7 +35,7 @@ const about = () => {
             <div className={style.about_me}>
                 <h4 className={style.about} >About Me</h4>
             </div>
-
+        
             <div className={style.section}>
                 <div className={style.info} >
 
@@ -74,19 +75,26 @@ const about = () => {
                             </Grid>
 
                         </div>
+                        
                         <div style={{ height: "300px", border: '1px solid #14c7c7' }} className={style.hello2}>
                             
+
                             <Grid item xs={12} sm={12} className={style.imageContainer}>
-                               <Image src={profilPic} alt='Albad_profile' height={300} width={250} className={style.profile} sm={6} lg={12} />
+                               
+                                <Image src={profilPic} alt='Albad_profile' height={300} width={250} className={style.profile} sm={6} lg={12} />
+                            
                             </Grid>
+                            
                             <div className={style.border}>
                                 <Grid item className={style.connectContainer}>
-                                    <Link href='https://www.linkedin.com/in/alieu-badara-keita-ba1a3a205/'target='_blank'><div className={style.cennectIconContainer}><FaLinkedinIn /></div></Link>
-                                    <Link href = "mailto: alioubkeita95@gmail.com" ><div className={style.cennectIconContainer}><FaEnvelope/></div></Link>
-                                    <Link href='https://github.com/AlbadDev'target='_blank'><div className={style.cennectIconContainer}><FaGithub /></div></Link>
+                                    <Link href='https://www.linkedin.com/in/alieu-badara-keita-ba1a3a205/'target='_blank'><div className={style.cennectIconContainer}><FirstLoad><FaLinkedinIn /></FirstLoad></div></Link>
+                                    <Link href = "mailto: alioubkeita95@gmail.com" ><div className={style.cennectIconContainer}><FirstLoad><FaEnvelope/></FirstLoad></div></Link>
+                                    <Link href='https://github.com/AlbadDev'target='_blank'><div className={style.cennectIconContainer}><FirstLoad><FaGithub /></FirstLoad></div></Link>
                                 </Grid>
                             </div>
+                            
                         </div>
+                        
                         {/* <div></div> */}
 
                         {/* 
@@ -162,6 +170,7 @@ const about = () => {
                     <Social />
                 </Grid>
             </div>
+            
             <section className={style.goToWorkButton}>
            
                 <Link  href='/project' rel="noreferrer"className={style.button}>Go To Work <span className={style.arrow}>&#x2192;</span></Link>

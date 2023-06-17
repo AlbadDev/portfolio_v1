@@ -17,7 +17,7 @@
 
         #name {
             width: 100%;
-            font-size: clamp(30px, 8vw, 60px);
+            font-size: clamp(20px, 8vw, 40px);
             //color: #14c7c7;
 
         }
@@ -25,6 +25,8 @@
 
 
         .description {
+            margin-top: -1px;
+            font-size: 24px;
             .aboutLink {
                 display: inline-flex;
                 fill: currentColor;
@@ -114,6 +116,7 @@
             }
 
             .description {
+               
                 font-size: 20px;
                 width: 90%;
                 background-color: none;
@@ -142,10 +145,11 @@
 
 
             .description {
-                font-size: 20px;
+                //border: 2px solid red;
+                font-size: 24px;
                 width: 70%;
                 background-color: none;
-                margin-left: 60px;
+                margin-left: 110px;
             }
         }
     }
@@ -171,12 +175,13 @@
 
             #name {
                 width: 100%;
-                font-size: clamp(40px, 8vw, 80px);
+                font-size: clamp(10px, 6vw, 40px);
 
             }
 
             .description {
-                font-size: 40px;
+                font-size: 30px;
+                
                 width: 70%;
                 background-color: none;
                 //margin-left: 60px;
