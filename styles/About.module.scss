@@ -87,7 +87,10 @@
             display: flex;
             // background-color: gray ;
             margin-top: -260px;
-
+            border: 1px solid #14c7c7;
+            link {
+                margin-bottom: 10px;
+            }
             a {
                 display: flex;
                 justify-content: center;
@@ -162,9 +165,7 @@
           //background-color: #14c7c72a;
             width: 100%;
            // overflow: visible;
-           .profile {
-            z-index: 1;
-           }
+           
           
           }
           .border {
@@ -173,6 +174,10 @@
                 display: flex;
                 flex-direction: column;
                 margin-right: 5px;
+
+                .connectLink {
+                    margin-bottom: 20px;
+                }
             }
             .cennectIconContainer:hover {
                 

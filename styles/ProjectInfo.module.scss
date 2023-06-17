@@ -35,9 +35,9 @@
     .link {
         padding-right: 15px;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         width: 100%;
-        margin-left: -10px;
+        margin-left: 40px;
         .websiteLink {
             display: flex;
             align-items: center;
@@ -134,16 +134,22 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                // justify-content: center;
                 height: auto;
-                h4 {
+                .techTitle {
+                    display:flex;
+                    //align-items: center;
                     color: #14c7c7;
                     font-size: 20px;
                     top: 8px;
+                    .mecanicIcon {
+                        margin: 5px 5px;
+                    }
                 }
                 ul li{
                     display: flex;
                     border: 1px solid  #14c7c7;;
-                    margin: 10px;
+                    //margin: 10px;
                     padding-left: 10px;
                     padding-bottom: 5px;
                     
@@ -220,33 +226,62 @@
         margin-bottom: -40px;
         .container {
             display: flex;
+            align-items: center;
             width: 100%;
+            .linkContainer {
+                width: 100px;
+                margin: 20px;
+                border: 1px solid #14c7c71e;
+                padding: 10px;
+            }
+            .Link {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                color: cyan;
+           
 
+
+            }
+            .Link:hover {
+                color: rgba(0, 255, 255, 0.603);
+            }
             .secondListLink {
                 display: flex;
                 div {
+                    width: 100px;
                     margin: 20px;
-                    border: 1px solid #14c7c7;
+                    border: 1px solid #14c7c71e;
                     padding: 10px;
-                    a {
+                    .Link {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
                         color: cyan;
+
+
                     }
-                    a:hover {
+                    // // a {
+                    //     color: cyan;
+                    // }
+                    .Link:hover {
                         color: rgba(0, 255, 255, 0.603);
                     }
                 }
             }
-            div {
-                margin: 20px;
-                border: 1px solid #14c7c7;
-                padding: 10px;
-                a {
-                    color: cyan;
-                }
-                a:hover {
-                    color: rgba(0, 255, 255, 0.603);
-                }
-            }
+            // div {
+            //     margin: 20px;
+            //     border: 1px solid #14c7c7;
+            //     padding: 10px;
+            //     a {
+            //         color: cyan;
+            //     }
+            //     a:hover {
+            //         color: rgba(0, 255, 255, 0.603);
+            //     }
+            // }
         }
     }
 }
@@ -264,7 +299,7 @@
     }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 768px) {
     .section {
         margin: auto 70px;
     }
@@ -275,6 +310,22 @@
 @media (max-width: 600px) {
     .section {
         margin: auto 10px;
+        .link {
+            display: none;
+            //justify-content: flex-end;
+            //margin-left: 130px;
+        }
+        .imageContainer {
+            display: flex;
+            flex-direction: column;
+          //  border: 1px solid #14c7c7;
+            // .firstImage {
+            //     width: 50%;
+            // }
+            .secondImage {
+               display: none;
+            }
+        }
     }
     .tecnoContainer {
         margin-left: -40px;

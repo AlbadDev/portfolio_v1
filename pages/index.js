@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Home from '../components/home'
-
+import About from './about'
+import Projects from './project'
 
 export default function Page() {
   return (

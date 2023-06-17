@@ -5,7 +5,7 @@ import style from '../styles/Project.module.scss'
 
 
 
-const project = ({ projects }) => {
+const Projects = ({ projects }) => {
     return (
         <>
             <Head>
@@ -24,7 +24,7 @@ const project = ({ projects }) => {
     )
 }
 
-export default project
+export default Projects
 
 
 export const getStaticProps = async (context) => {

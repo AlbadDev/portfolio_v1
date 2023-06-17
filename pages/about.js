@@ -20,7 +20,7 @@ const kalam = Kalam({
 
 
 
-const about = () => {
+const About = () => {
 
     const bannerWidth = "80%" || "fit-content"
 
@@ -87,9 +87,10 @@ const about = () => {
                             
                             <div className={style.border}>
                                 <Grid item className={style.connectContainer}>
-                                    <Link href='https://www.linkedin.com/in/alieu-badara-keita-ba1a3a205/'target='_blank'><div className={style.cennectIconContainer}><FirstLoad><FaLinkedinIn /></FirstLoad></div></Link>
-                                    <Link href = "mailto: alioubkeita95@gmail.com" ><div className={style.cennectIconContainer}><FirstLoad><FaEnvelope/></FirstLoad></div></Link>
-                                    <Link href='https://github.com/AlbadDev'target='_blank'><div className={style.cennectIconContainer}><FirstLoad><FaGithub /></FirstLoad></div></Link>
+                                   
+                                    <Link className={style.connectLink} href = "mailto: alioubkeita95@gmail.com" ><div className={style.cennectIconContainer}><FirstLoad><FaEnvelope/></FirstLoad></div></Link>
+                                    <Link className={style.connectLink} href='https://github.com/AlbadDev'target='_blank'><div className={style.cennectIconContainer}><FirstLoad><FaGithub /></FirstLoad></div></Link>
+                                    <Link className={style.connectLink} href='https://www.linkedin.com/in/alieu-badara-keita-ba1a3a205/'target='_blank'><div className={style.cennectIconContainer}><FirstLoad><FaLinkedinIn /></FirstLoad></div></Link>
                                 </Grid>
                             </div>
                             
@@ -117,9 +118,9 @@ const about = () => {
                         
                         <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                             <h4 style={{ color: '#8892b0' }}> <Reveal>Here are a few technologies I&apos;ve been working with recently </Reveal></h4>
-                            <div style={{ marginTop: 30 }}>
+                            {/* <div style={{ marginTop: 30 }}>
                                 <Reveal> <FaHandPointDown style={{ color: '#E1AE37', height: 40 }} /></Reveal>
-                            </div>
+                            </div> */}
                         </div>
 
                         <section className={style.skills}>
@@ -179,4 +180,4 @@ const about = () => {
     )
 }
 
-export default about
+export default About

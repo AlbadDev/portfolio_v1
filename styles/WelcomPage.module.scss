@@ -100,7 +100,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media ( width: 768px) {
     .container {
         .section {
             p {
@@ -116,10 +116,12 @@
             }
 
             .description {
-               
+              // border: 1px solid red;
+               margin-left: 80px;
                 font-size: 20px;
                 width: 90%;
                 background-color: none;
+                
             }
         }
     }
