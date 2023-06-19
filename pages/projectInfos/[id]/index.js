@@ -109,7 +109,8 @@ const project = ({project}) => {
                     </article>
                     <Grid item xs={10} className={style.deep}>
                         <Grid item xs={12} sm={12} lg={12} className={style.deepChild}>
-                           <div><FirstLoad> <h4><span className={style.faCat}><FaMedapps style={{color:'yellow'}}/></span> In Deep :</h4></FirstLoad></div>
+                        <div className={style.title}><FirstLoad><h3><span className={style.faCat}><FaMedapps style={{color:'yellow'}}/></span> In Deep :</h3></FirstLoad></div>
+                           {/* <div> <h4><span className={style.faCat}><FaMedapps style={{color:'yellow'}}/></span> In Deep :</h4></div> */}
                             <div>
                                 <ul>
                                     {project.inDeep.map(deep => <FirstLoad><li key={project.id}><span><BsCheck /></span> {deep}</li></FirstLoad>)}

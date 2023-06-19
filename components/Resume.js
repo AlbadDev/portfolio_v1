@@ -129,7 +129,7 @@ const Resume = ( { resultData } ) => {
                                 </article>
 
                                 <article className={style.resumeEducationContainer}>
-                                    <header className={style.resumeHeadline}><h1>EDUCATION</h1></header>
+                                    <header className={style.resumeHeadline}><h1>WORK EXPERIENCE</h1></header>
                                     {/* <h2>Self-taugth: </h2> */}
                                     <p>Object Oriented Programming, Functional Programming, Data Structures, with problem solving mind set and try developing soft skills to get better. </p>
                                 </article>

@@ -63,7 +63,7 @@ const About = () => {
                             <p>
                                <Reveal> <span className={style.firstLetter}>I</span> enjoy creating things that live on the internet.
                                 My interest in web development started back in 2018 when I decided to try leaning programing stuff — editing custom button taught me a lot about HTML and CSS!
-                                Now coding has developed into a passion of mine with a strong  problem solving mindset, specifically, in the web developent.
+                                Now coding has developed into a passion of mine with an strong  user experience mindset, specifically, in the web developent.
                                 I&#39;ve dedicated my time to gaining proficiency in all intricacies of web development in order to be better .
                                 <span style={{ background: 'yellow', color: "black" }}><br /> I&#39;m specializing in building  front-end web application,</span> Able to create clean and functional full-stark  web application as well as professional branding and hight quality user experience.
                                 <span style={{ background: 'yellow', color: "black" }}>My goal is to always build applications that are scalable and efficient under the hood while providing engaging, pixel-perfect user experiences.</span>
