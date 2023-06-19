@@ -63,6 +63,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: auto 50px;
         .imageContainer {
             width: 100%;
             display:flex;
@@ -88,6 +89,13 @@
             margin: 10px;
             border-radius: 20px;
         }
+        p {
+            display: flex;
+            flex-direction: row;
+            text-align: left;
+            margin-top: 50px;
+
+        }
     }
     h2 {
         color: cyan;
@@ -108,13 +116,33 @@
     .childContainer {
         display: flex;
         flex-direction: column;
+        padding: auto 50px;
         width: 100%;
+        
         .title {
+            display: flex;
+            align-items: center;
             float: left;
             color:#14c7c7;
             width: 100%;
             letter-spacing: 2px;
             font-size: 30px;
+
+            .stark {
+                display: flex;
+                align-items: center;
+                
+            }
+            .starkIcon {
+                margin-right: 15px ;
+                margin-top: 5px;
+                color: rgba(97, 95, 95, 0.363);
+            }
+
+            
+        }
+        .pListOfTech {
+            margin-left: 50px;
         }
         .mvpContainer {
             margin-bottom: 80px;
@@ -148,11 +176,11 @@
                 }
                 ul li{
                     display: flex;
-                    border: 1px solid  #14c7c7;;
+                   // border: 1px solid  #14c7c7;;
                     //margin: 10px;
                     padding-left: 10px;
                     padding-bottom: 5px;
-                    
+                    background-color: rgba(0, 255, 255, 0.062);
                     span {
                         margin-left: 10px;
                     }
@@ -165,7 +193,8 @@
                     }
                 }
                 li:hover {
-                    background-color: rgba(0, 255, 255, 0.062);
+                    cursor: pointer;
+                    //background-color: rgba(0, 255, 255, 0.062);
                 }
             }
             .tecnoContainer {
@@ -197,9 +226,9 @@
             }
         }
 
-        .deep {
+        .childContainer {
             display: flex;
-            margin: auto 30px;
+           // margin: auto 30px;
             h4 {
                 color: #14c7c7;
                 font-size: 20px;

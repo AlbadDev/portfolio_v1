@@ -48,7 +48,7 @@ const project = ({project}) => {
                 </div>
 
                <FirstLoad> <Grid  container>
-                    <p><BsInfoCircle className={style.infoIcon}/><Reveal> {project.description}</Reveal></p>
+                    <p ><BsInfoCircle className={style.infoIcon}/><Reveal> {project.description}</Reveal></p>
                 </Grid></FirstLoad>
 
                 <section className={style.childContainer}>
@@ -83,8 +83,8 @@ const project = ({project}) => {
                 </section>
 
                 <section className={style.childContainer}>
-                   <FirstLoad> <div className={style.title}><h3><FaCogs /> Stack :</h3></div></FirstLoad>
-                    <p><Reveal > There are a the list of technologies and colors palettes I used to build and design <span style={{color: 'cyan',marginLeft: 5}}> {project.title}</span>.</Reveal></p>
+                   <FirstLoad> <div className={style.title}><h3 className={style.stark}><FaCogs className={style.starkIcon}/> Stack :</h3></div></FirstLoad>
+                    <p className={style.pListOfTech}><Reveal > There are a the list of technologies and colors palettes I used to build and design <span style={{color: 'cyan',marginLeft: 5}}> {project.title}</span>.</Reveal></p>
                     <article className={style.article}>
                         <Grid item xs={12} sm={6} lg={4} className={style.stackChild} style={{marginBottom: 20}}>
                             <div><FirstLoad><h4 className={style.techTitle}><FaWrench className={style.mecanicIcon}/>Tecnologies : </h4></FirstLoad></div>
@@ -107,10 +107,10 @@ const project = ({project}) => {
                             </div>
                         </Grid>
                     </article>
-                    <Grid item xs={10} className={style.deep}>
+                    <Grid item xs={10} className={style.childContainer}>
                         <Grid item xs={12} sm={12} lg={12} className={style.deepChild}>
-                        <div className={style.title}><FirstLoad><h3><span className={style.faCat}><FaMedapps style={{color:'yellow'}}/></span> In Deep :</h3></FirstLoad></div>
-                           {/* <div> <h4><span className={style.faCat}><FaMedapps style={{color:'yellow'}}/></span> In Deep :</h4></div> */}
+                            <div className={style.title}><FirstLoad><h3><span className={style.faCat}><FaMedapps style={{color:'yellow'}}/></span> In Deep :</h3></FirstLoad></div>
+                            {/* <div> <h4><span className={style.faCat}><FaMedapps style={{color:'yellow'}}/></span> In Deep :</h4></div> */}
                             <div>
                                 <ul>
                                     {project.inDeep.map(deep => <FirstLoad><li key={project.id}><span><BsCheck /></span> {deep}</li></FirstLoad>)}
