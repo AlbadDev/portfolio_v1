@@ -32,9 +32,8 @@ import FirstLoad from '../../../utils/FirstLoad'
 
 
 
-const project =  ({project, params}) => {
-   
-    console.log(params)
+const project =  ({project}) => {
+ 
 
 
     return (
@@ -73,15 +72,15 @@ const project =  ({project, params}) => {
                 </Grid></FirstLoad>
 
                 <section className={style.childContainer}>
-                    <FirstLoad><div className={style.title}><h3><FaLaptop /> Complete MVP :</h3></div></FirstLoad>
+                    <FirstLoad><div className={style.title}><h3><FaLaptop className={style.MvpIcon}/> Complete MVP</h3></div></FirstLoad>
                     <article>
                        <Grid item xs={12} className={style.mvpContainer}> 
                             <ul>
-                                {project.mvp.map(mvp =><li key={project.id}><span></span><Reveal><BsCheckCircle style={{color: 'cyan'}}/>{mvp}</Reveal> </li> )}
+                                {project.mvp.map(mvp =><li key={project.id}><Reveal><BsCheckCircle style={{color: 'cyan'}} className={style.CheckCircle}/>{mvp}</Reveal> </li> )}
                             </ul>
                        </Grid>
                         <div className={style.imageContainer}>
-                           <div style={{margin:15}}>
+                           <div >
                                 {
                                    //project.bodyTabScreen && project.bodyTabScreen.map(screen =>
                                    <FirstLoad>  <Image key={project.id} src= {project.bodyTabScreen} width= '300' height='350' alt='pokedex_home' className={style.bodyImage} /></FirstLoad>
@@ -104,7 +103,7 @@ const project =  ({project, params}) => {
                 </section>
 
                 <section className={style.childContainer}>
-                   <FirstLoad> <div className={style.title}><h3 className={style.stark}><FaCogs className={style.starkIcon}/> Stack :</h3></div></FirstLoad>
+                   <FirstLoad> <div className={style.title}><h3 className={style.stark}><FaCogs className={style.starkIcon}/> Stack </h3></div></FirstLoad>
                     <p className={style.pListOfTech}><Reveal > There are a the list of technologies and colors palettes I used to build and design <span style={{color: 'cyan',marginLeft: 5}}> {project.title}</span>.</Reveal></p>
                     <article className={style.article}>
                         <Grid item xs={12} sm={6} lg={4} className={style.stackChild} style={{marginBottom: 20}}>
@@ -130,7 +129,7 @@ const project =  ({project, params}) => {
                     </article>
                     <Grid item xs={10} className={style.childContainer}>
                         <Grid item xs={12} sm={12} lg={12} className={style.deepChild}>
-                            <div className={style.title}><FirstLoad><h3><span className={style.faCat}><FaMedapps style={{color:'yellow'}}/></span> In Deep :</h3></FirstLoad></div>
+                            <div className={style.title}><FirstLoad><h3><span className={style.faCat}><FaMedapps style={{color:'yellow'}}/></span> In Deep </h3></FirstLoad></div>
                             {/* <div> <h4><span className={style.faCat}><FaMedapps style={{color:'yellow'}}/></span> In Deep :</h4></div> */}
                             <div>
                                 <ul>
@@ -144,16 +143,23 @@ const project =  ({project, params}) => {
                         <FirstLoad>
                         <section className={style.container}>
                             <div className={style.linkContainer}>
-                                <Link href='/project' className={style.Link}><span style={{color:'#4feb34', marginRight:'5px'}}>&#8592;</span>  Back </Link>
+                                <Link href='/project' className={style.Link}><span style={{color:'#14c7c7', marginRight:'5px'}}>&#8592;</span>  Back </Link>
                             </div>
+
+                            
+
                             <section className={style.secondListLink}> 
                                 <div className={style.linkContainer}>
-                                    <Link href='/' className={style.Link}><BsBoxArrowUpRight  style={{color:'#ebdf34', marginRight:'5px'}}/> Live</Link>
+                                    <Link href={`http://${project.webSite}`} className={style.Link} target='_blank'><BsBoxArrowUpRight  style={{color:'#ebdf34', marginRight:'5px'}}/> Live</Link>
                                 </div>
                                 <div className={style.linkContainer}>
-                                    <Link href={project.github}target='_blank' className={style.Link}><FaGithub style={{color:'#346beb', marginRight:'5px'}}/> Code</Link>
+                                    <Link href={project.github}target='_blank' className={style.Link} ><FaGithub style={{color:'#346beb', marginRight:'5px'}}/> Code</Link>
                                 </div>
                             </section>
+
+                            <div className={style.linkContainer}>
+                                <Link href={+project.id !== 4 ? `/projectInfos/${ +project.id + 1 }` : '/project' } className={style.Link} >  Next <span style={{color:'#4feb34', marginLeft:'5px'}}>&#8594;</span></Link>
+                            </div>
                        </section>
                        </FirstLoad>
                     </Grid>                     

@@ -117,7 +117,7 @@ const About = () => {
 
                         
                         <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                            <h4 style={{ color: '#8892b0' }}> <Reveal>Here are a few technologies I&apos;ve been working with recently </Reveal></h4>
+                            <h4 style={{ color: '#8892b0' }}> <Reveal>Few technologies I&apos;ve been working with recently </Reveal></h4>
                             {/* <div style={{ marginTop: 30 }}>
                                 <Reveal> <FaHandPointDown style={{ color: '#E1AE37', height: 40 }} /></Reveal>
                             </div> */}

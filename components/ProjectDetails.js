@@ -6,7 +6,7 @@ import Reveal from "../utils/Reveal";
 
 const ProjectDetails = ({ work }) => {
   return (
-    <section>
+    <section className={style.container}>
       <section id={work.id} className={style.section}>
         <header>
           <div className={style.left}>

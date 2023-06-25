@@ -129,6 +129,16 @@
             letter-spacing: 2px;
             font-size: 30px;
 
+            h3 {
+                display: flex;
+                align-items: center;
+                .MvpIcon {
+                    color:#cec5c5;
+                    margin-top: 5px;
+                    margin-right: 15px ;
+                   
+                }
+            }
             .stark {
                 display: flex;
                 align-items: center;
@@ -137,7 +147,7 @@
             .starkIcon {
                 margin-right: 15px ;
                 margin-top: 5px;
-                color: rgba(97, 95, 95, 0.363);
+                color: rgba(155, 151, 151, 0.525);
             }
 
             
@@ -146,12 +156,27 @@
             margin-left: 50px;
         }
         .mvpContainer {
+            display: flex;
+            //justify-content: center;
+            align-items: center;
             margin-bottom: 80px;
-            ul li {
+           
+            ul {
+               
+                li {
+                  
                 list-style: none;
                 margin-bottom: 5px;
                 color: rgba(201, 191, 191, 0.877);
+               
+               
+                
+                .CheckCircle {
+                    margin-right: 7px;
+                    
+                }
             }
+        }
     
         }
         .article {
@@ -240,6 +265,7 @@
                 ul {
                     list-style: none;
                     li {
+                     
                         margin-bottom: 5px;
                         color: rgb(206, 197, 197);                }
                     }
@@ -256,7 +282,9 @@
         margin-bottom: -40px;
         .container {
             display: flex;
-            align-items: center;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            //align-items: center;
             width: 100%;
             .linkContainer {
                 width: 100px;
@@ -264,19 +292,23 @@
                 border: 1px solid #14c7c71e;
                 padding: 10px;
             }
+            .linkContainer:hover {
+                .Link {
+                    color: rgba(0, 255, 255, 0.862);
+                }
+            }
             .Link {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 justify-content: center;
-                color: cyan;
+                color:#14c7c74d;
+               
            
 
 
             }
-            .Link:hover {
-                color: rgba(0, 255, 255, 0.603);
-            }
+            
             .secondListLink {
                 display: flex;
                 div {

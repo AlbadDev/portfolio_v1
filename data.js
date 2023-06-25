@@ -5,7 +5,7 @@ export const projectInfo = [
       name:'My-Pokemon-App',
       title: 'Pokedex',
       github: `https://github.com/AlbadDev/My-Pokemon-App`,
-      webSite:`https://pokedex-17cda.web.app`,
+      webSite:`pokedex-17cda.web.app`,
       description: 'Pokedex is a simple CRUD pokemon web application with beautiful UI design.  This App allows user to create, update, delete or search an specific pokemon . Pokedex is build using the pokemon data API.',
       material: ['React', 'TypeScript', 'MaterialUi', 'Firebase'],
       mvp: ['Fisrt of all the user need to login with our default username and password : " pikachu " ',
