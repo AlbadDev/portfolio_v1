@@ -1,12 +1,35 @@
+'use client'
+
 import style from '../styles/Navbar.module.scss'
 import Link from 'next/link'
 import { FaStream } from 'react-icons/fa'
 import ActiveLink from './Helper/ActiveLink'
 import FirstLoad from '../utils/FirstLoad'
+import { useState, useEffect } from 'react'
 
 export const Navbar = () => {
+
+    const [isScrolled, setIsScrolled] = useState(false);
+    //........
+    useEffect(() => {
+        const handleScroll = () => {
+          const scrollPosition = window.scrollY;
+          if (scrollPosition > 0) {
+            setIsScrolled(true);
+          } else {
+            setIsScrolled(false);
+          }
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+    
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+      }, []);
+
     return (
-        <nav className={style.nav}>
+        <nav className={isScrolled ?  style.navScroll : style.nav } >
             <i>Albad</i>
             <section className={style.section}>
                 <ul>

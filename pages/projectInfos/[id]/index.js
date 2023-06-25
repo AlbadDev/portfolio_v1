@@ -1,3 +1,5 @@
+
+
 import Grid  from '@material-ui/core/Grid'
 import style from '../../../styles/ProjectInfo.module.scss'
 import Image from 'next/image'
@@ -7,15 +9,34 @@ import { FaGithub, FaCogs, FaLaptop, FaPalette, FaWrench,FaMedapps, FaStaylinked
 import {BsBoxArrowUpRight, BsInfoCircle, BsCheck, BsCheckCircle} from 'react-icons/bs'
 import Reveal from '../../../utils/Reveal'
 import FirstLoad from '../../../utils/FirstLoad'
-import { Stint_Ultra_Expanded } from 'next/font/google'
 
 
 // const myImageLoader = () => {
 //     return `https://raw.githubusercontent.com/AlbadDev/portfolio_v1/master/public/image/reposImages/${project.name}/${project.}`
 // }
 
+// const  getData = async ({id}) => {
+//     const res = await fetch(`http://localhost:3000/api/projectInfos/${id}`)
+//     // The return value is *not* serialized
+//     // You can return Date, Map, Set, etc.
+   
+//     // Recommendation: handle errors
+//     if (!res.ok) {
+//       // This will activate the closest `error.js` Error Boundary
+//       console.log('Failed to fetch data')
+//     }
+   
+//     return res.json()
+//   }
 
-const project = ({project}) => {
+
+
+
+const project =  ({project, params}) => {
+   
+    console.log(params)
+
+
     return (
         <>
             <Head>

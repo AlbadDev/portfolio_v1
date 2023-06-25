@@ -1,3 +1,13 @@
+// .aboutSection {
+//     background-image: url('https://dev.epicgames.com/community/assets/images/bg-header-unreal-engine.svg');
+//     background-position: center top;
+//     background-repeat: no-repeat,repeat-y;
+//     //background-color: #1a1d28;
+//     background-size: 100% auto;
+//     margin-top: -80px;
+//     padding-top: 80px;
+// }
+
 .about_me {
     float: left;
     width: 100%;
@@ -7,7 +17,7 @@
 .section {
     display: flex;
     flex-direction: row;
-   margin: -100px auto;
+    margin: -100px auto;
     padding: 20px ;
     /*transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;*/
@@ -364,18 +374,20 @@
     .button {
         //background-color: transparent;
         //border: none;
-        border-bottom: 1px solid #14c7c773;
-        padding: 5px;
-        border-radius: 5px;
-        
-    }
-    .button:hover {
-
         border: 1px solid #14c7c773;
         //border-top: 1px solid #14c7c7;
         padding: 8px;
         //padding-right: 5px;
-        transition: 1s ease-out;
+        
+        
+    }
+    .button:hover {
+        border-bottom: 1px solid #14c7c773;
+        padding: 5px;
+        border-radius: 5px;
+        transition: 200ms ease-out;
+        //............
+       
         cursor: pointer;
         /*background-color: #14c7c73d;
         

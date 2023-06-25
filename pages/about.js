@@ -25,7 +25,7 @@ const About = () => {
     const bannerWidth = "80%" || "fit-content"
 
     return (
-        <>
+        <section className={style.aboutSection}>
             <Head>
                 <title>Albad | About Me</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -176,7 +176,7 @@ const About = () => {
            
                 <Link  href='/project' rel="noreferrer"className={style.button}>Go To Work <span className={style.arrow}>&#x2192;</span></Link>
             </section>
-        </>
+        </section>
     )
 }
 

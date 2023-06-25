@@ -1,8 +1,16 @@
 html,
 body {
+  background-image: url('https://dev.epicgames.com/community/assets/images/bg-header-unreal-engine.svg');
+    background-position: center top;
+    background-repeat: no-repeat,repeat-y;
+    /* background-color: #1a1d28; */
+    background-size: 100% auto;
+    margin-top: -3px;
+    /* padding-top: 20px; */
+  /* ........ */
   background-color: rgba(4,31,32,255);
-  padding: 0;
-  margin: 0;
+  /* padding: 0;
+  margin: 0; */
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
