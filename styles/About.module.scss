@@ -362,7 +362,12 @@
   
 }
 .goToWorkButton {
-    margin-top: 140px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 160px;
+    margin-bottom: 70px;
     a {
         color: rgba(240, 248, 255, 0.644);
         font-size: 16px;
@@ -383,7 +388,7 @@
     }
     .button:hover {
         border-bottom: 1px solid #14c7c773;
-        padding: 5px;
+        //padding: 8px;
         border-radius: 5px;
         transition: 200ms ease-out;
         //............
@@ -428,9 +433,10 @@
 }
 
  @media (min-width: 1024px) and (max-width: 1024px) {
+    
      .info {
         border: none;
-        margin-top: 30px;
+        margin-top: -30px;
         .personal_info {
             border: none;
             .hello1 {
