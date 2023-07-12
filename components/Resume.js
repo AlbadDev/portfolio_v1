@@ -18,7 +18,7 @@ const kalam = Kalam({
 const Resume = ( { resultData } ) => {
 
     return (
-        <div>
+        <div className={style.BigContainer}>
             <Head>
                 <title>Albad | Resume</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -64,6 +64,8 @@ const Resume = ( { resultData } ) => {
                                     <li className={style.list}> <GiStarGate  className={style.listIcon} /> <a href="https://www.typescriptlang.org/" target='_blank' rel="noreferrer">TYPESCRIPT</a></li>
                                     <li className={style.list}> <GiStarGate  className={style.listIcon} /> <a href="https://reactjs.org/" target='_blank' rel="noreferrer">REACT JS</a></li>
                                     <li className={style.list}> <GiStarGate  className={style.listIcon} /> <a href="https://nextjs.org/" target='_blank' rel="noreferrer">NEXTJS</a></li>
+                                    <li className={style.list}> <GiStarGate  className={style.listIcon} /> <a href="https://expressjs.com/" target='_blank' rel="noreferrer">EXPRESS JS / NODEJS</a></li>
+                                    <li className={style.list}> <GiStarGate  className={style.listIcon} /> <a href="https://www.mysql.com/" target='_blank' rel="noreferrer">MYSQL</a></li>
                                     <li className={style.list}> <GiStarGate  className={style.listIcon} /> <a href="https://mui.com/" target='_blank' rel="noreferrer">MATERIAL-UI</a></li>
                                     <li className={style.list}> <GiStarGate  className={style.listIcon} /> <a href="https://sass-lang.com/" target='_blank' rel="noreferrer">SASS</a></li>
                                     <li className={style.list}> <GiStarGate  className={style.listIcon} /> <a href="https://firebase.google.com/?gclsrc=aw.ds" target='_blank' rel="noreferrer">FIREBASE</a></li>

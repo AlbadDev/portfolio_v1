@@ -11,7 +11,7 @@ const ExperienceCard = ({ work }) => {
         <section key={work.id.toString()} className={style.experienceCard}>
             <div  key={work.id.toString()} className={style.workHeader}>
                 <h2 className={style.workTitle}>{work.title}</h2>
-                <a href='' className={style.workView}>view</a>
+                <a href={work.webSite} target='_blank' className={style.workView}>view</a>
             </div>
             <div  key={work.id.toString()} className={style.workDescription}>
                 { work.mvp.map( mvp => (
