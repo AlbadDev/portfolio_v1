@@ -150,7 +150,7 @@ const project =  ({project}) => {
 
                             <section className={style.secondListLink}> 
                                 <div className={style.linkContainer}>
-                                    <Link href={`http://${project.webSite}`} className={style.Link} target='_blank'><BsBoxArrowUpRight  style={{color:'#ebdf34', marginRight:'5px'}}/> Live</Link>
+                                    <Link href={`${project.webSite}`} className={style.Link} target='_blank'><BsBoxArrowUpRight  style={{color:'#ebdf34', marginRight:'5px'}}/> Live</Link>
                                 </div>
                                 <div className={style.linkContainer}>
                                     <Link href={project.github}target='_blank' className={style.Link} ><FaGithub style={{color:'#346beb', marginRight:'5px'}}/> Code</Link>
