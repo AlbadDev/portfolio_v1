@@ -178,7 +178,7 @@ export default project
 
 export const getStaticProps = async (context) => {
     const { id } = context.params
-    const response = await fetch(`/api/projectInfos/${id}`)
+    const response = await fetch(`https://portfolio-v1-6nz4sx0u3-albaddev.vercel.app/api/projectInfos/${id}`)
     const project = await response.json()
 
     return {
@@ -187,7 +187,7 @@ export const getStaticProps = async (context) => {
 }
 
 export const getStaticPaths = async () => {
-    const response = await fetch(`/api/projectInfos`)
+    const response = await fetch(`https://portfolio-v1-6nz4sx0u3-albaddev.vercel.app/api/projectInfos`)
     const projects = await response.json()
 
     const paths = projects.map(project => (
