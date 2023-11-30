@@ -111,7 +111,7 @@ const project =  ({project}) => {
                            <div className={style.tecnoContainer}>
                                 <ul>
                                     {project.material.map(tecno =>
-                                      <Reveal><li key={tecno.toString()} ><div><Image className={style.tecnoIcon}  src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${tecno.toLowerCase()}/${tecno.toLowerCase()}-original.svg`} alt={tecno.toString()} width={30} height={30} marginright='10px'/></div> <span>{tecno}</span></li></Reveal> 
+                                      <Reveal key={tecno.toString()}><li key={tecno.toString()} ><div><Image className={style.tecnoIcon} key={tecno.toString()}  src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${tecno.toLowerCase()}/${tecno.toLowerCase()}-original.svg`} alt={tecno.toString()} width={30} height={30} marginright='10px'/></div> <span>{tecno}</span></li></Reveal> 
                                     )}
                                 </ul>
                            </div>
@@ -121,7 +121,7 @@ const project =  ({project}) => {
                             <div className={style.tecnoContainer}>
                                 <ul>
                                     {project.colors.map(color => 
-                                       <Reveal> <li key={color.toString()}><div className={style.circle} style={{background:color}}></div>{color} </li></Reveal>
+                                       <Reveal key={color.toString()}> <li key={color.toString()}><div className={style.circle} style={{background:color}}></div>{color} </li></Reveal>
                                     )}
                                 </ul>
                             </div>
@@ -133,7 +133,7 @@ const project =  ({project}) => {
                             {/* <div> <h4><span className={style.faCat}><FaMedapps style={{color:'yellow'}}/></span> In Deep :</h4></div> */}
                             <div>
                                 <ul>
-                                    {project.inDeep.map(deep => <FirstLoad><li key={project.id}><span><BsCheck /></span> {deep}</li></FirstLoad>)}
+                                    {project.inDeep.map(deep => <FirstLoad key={color.toString()}><li key={project.id}><span><BsCheck /></span> {deep}</li></FirstLoad>)}
                                 </ul>
                             </div>
                         </Grid>
