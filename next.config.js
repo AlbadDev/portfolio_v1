@@ -8,7 +8,8 @@ module.exports = {
         "cdn.vox-cdn.com",
         "cdn.jsdelivr.net",
         "raw.githubusercontent.com",
-        "avatars.githubusercontent.com" 
+        "avatars.githubusercontent.com",
+        "uploads-ssl.webflow.com"
       ]    
   }
 }

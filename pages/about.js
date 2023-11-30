@@ -57,7 +57,7 @@ const About = () => {
                         <div className={style.hello1}>
 
                             <div className={style.nameContainer}>
-                                <h4 className={style.salutation}><Reveal>Hello! {<FaHandSpock style={{ color: '#E1AE37' }} />}, I &apos; m </Reveal></h4>
+                                <h4 className={style.salutation}><Reveal>Hi! {<FaHandSpock style={{ color: '#E1AE37' }} />}, it&apos;s me</Reveal></h4>
                                 <h1 className={kalam.className} id={style.name}><Reveal>Alieu Badara </Reveal></h1>
                             </div>
                             <p>
@@ -174,7 +174,7 @@ const About = () => {
             
             <section className={style.goToWorkButton}>
            
-                <Link  href='/project' rel="noreferrer"className={style.button}>Go To Work <span className={style.arrow}>&#x2192;</span></Link>
+                <Link  href='/project' rel="noreferrer"className={style.button}>See My Work <span className={style.arrow}>&#x2192;</span></Link>
             </section>
         </section>
     )

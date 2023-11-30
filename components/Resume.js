@@ -58,8 +58,8 @@ const Resume = ( { resultData } ) => {
                             <div className={style.resumeLeftContainer}>
                                 <h2 className={style.header}>SKILLS</h2>
                                 <div className={style.listContainer}>
-                                    <li className={style.list}> <GiStarGate className={style.listIcon}/> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML#:~:text=HTML%20(HyperText%20Markup%20Language)%20is,functionality%2Fbehavior%20(JavaScript)." target='_blank' rel="noreferrer">HTML5</a></li>
-                                    <li className={style.list}> <GiStarGate  className={style.listIcon}/> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target='_blank' rel="noreferrer">CSS3</a></li>
+                                    {/* <li className={style.list}> <GiStarGate className={style.listIcon}/> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML#:~:text=HTML%20(HyperText%20Markup%20Language)%20is,functionality%2Fbehavior%20(JavaScript)." target='_blank' rel="noreferrer">HTML5</a></li>
+                                    <li className={style.list}> <GiStarGate  className={style.listIcon}/> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target='_blank' rel="noreferrer">CSS3</a></li> */}
                                     <li className={style.list}> <GiStarGate  className={style.listIcon} /> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target='_blank' rel="noreferrer">JAVASCRIPT</a></li>
                                     <li className={style.list}> <GiStarGate  className={style.listIcon} /> <a href="https://www.typescriptlang.org/" target='_blank' rel="noreferrer">TYPESCRIPT</a></li>
                                     <li className={style.list}> <GiStarGate  className={style.listIcon} /> <a href="https://reactjs.org/" target='_blank' rel="noreferrer">REACT JS</a></li>

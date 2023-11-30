@@ -1,0 +1,38 @@
+.layoutContainer {
+   
+    position: relative;
+}
+
+.layout {
+    display: flex;
+    position: absolute;
+    //border: 1px solid red;
+    width: 200px;
+    height: 500px;
+    margin-left: -1800px;
+
+    div {
+        display: none;
+        width: 100%;
+        background-image: url('https://uploads-ssl.webflow.com/5f718e7b0d482ef36d2c8417/6360a0ca1e9ac2450037a613_Group%20139.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+
+@media (min-width: 1725px) {
+    .layout {
+        display: flex;
+        position: absolute;
+        //border: 1px solid red;
+        width: 100px;
+        height: 450px;
+        margin-left: -1800px;
+        margin-top: 100px;
+        div {
+            display: inline;
+        }
+    }
+  }

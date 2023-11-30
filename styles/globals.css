@@ -33,3 +33,13 @@ a {
   font-weight: 400;
   font-display: swap;
 }
+
+
+@media (min-width: 3725px) {
+  body {
+      margin: 0px 200px;
+  }
+  /* .navScroll {
+      margin: 0px 400px;
+  } */
+}
